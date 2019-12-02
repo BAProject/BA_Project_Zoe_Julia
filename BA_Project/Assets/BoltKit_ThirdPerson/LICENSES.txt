@@ -1,0 +1,7 @@
+2D and 3D Assets by Kenney (https://kenney.nl)
+Licensed under CC0 1.0 Universal.
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Skyboxes by Borodar (https://assetstore.unity.com/publishers/17890)
+Redistributed as part of this package with explicit written permission.
+https://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cloudy-crown-60004
