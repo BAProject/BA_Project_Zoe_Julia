@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 5505918472921513112}
   - component: {fileID: 4469947077066921921}
   m_Layer: 0
-  m_Name: prefab_nutrientSource
-  m_TagString: Untagged
+  m_Name: prefab_tree
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,8 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98b98ee6ed4c7eb4e827498aaed2f3b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waterSupply: 0
-  _nutrientSupply: 0
   _isHealthy: 1
-  _hasEnergy: 1
-  _dangers: 00000000010000000300000002000000
+  _plantsInGroup: []
+  _plantsInFumeReach: []
+  _nutrientSources: []
+  _waterSources: []
