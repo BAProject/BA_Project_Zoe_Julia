@@ -15,6 +15,7 @@ public class Plant : MonoBehaviour
         Normal,
         high
     }
+
     enum Danger
     {
         LowWater,
