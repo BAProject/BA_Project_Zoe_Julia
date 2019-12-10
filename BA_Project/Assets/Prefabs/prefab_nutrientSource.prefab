@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 406622769342580936}
   - component: {fileID: 406622769342580935}
   - component: {fileID: 406622769342580934}
+  - component: {fileID: 114565142768277576}
   m_Layer: 0
   m_Name: prefab_nutrientSource
   m_TagString: Untagged
@@ -92,6 +93,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114565142768277576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406622769342580932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286dfe14a874f2b4283d49c59b0ab876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nutrients: 100
+  type: 
 --- !u!1 &7964266485558563536
 GameObject:
   m_ObjectHideFlags: 0

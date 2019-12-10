@@ -332,6 +332,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 271199d35ae7d4c4bb414085bae783e4, type: 3}
+--- !u!114 &406622769539473889 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114565142768277576, guid: 271199d35ae7d4c4bb414085bae783e4,
+    type: 3}
+  m_PrefabInstance: {fileID: 406622769539473888}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286dfe14a874f2b4283d49c59b0ab876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3814036153172158794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,5 +480,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4469947077066921921, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: _nutrientSources.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469947077066921921, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: _nutrientSources.Array.data[0]
+      value: 
+      objectReference: {fileID: 406622769539473889}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
