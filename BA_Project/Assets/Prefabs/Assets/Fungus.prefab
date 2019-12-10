@@ -101,6 +101,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6300429209380894058}
   - component: {fileID: 1669345261}
+  - component: {fileID: 426444827}
+  - component: {fileID: 426444828}
   m_Layer: 0
   m_Name: Fungus
   m_TagString: Fungus
@@ -117,7 +119,7 @@ Transform:
   m_GameObject: {fileID: 6300429209380894057}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.97, y: 0.61, z: 0}
-  m_LocalScale: {x: 0.52256, y: 0.52256, z: 0.52256}
+  m_LocalScale: {x: 2.2073104, y: 2.2073104, z: 2.2073104}
   m_Children:
   - {fileID: 6300429209936151379}
   - {fileID: 4314685714398877036}
@@ -134,10 +136,41 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.9364636
-  m_Height: 4.4955134
+  m_Radius: 0.93583655
+  m_Height: 3.8705204
   m_Direction: 1
-  m_Center: {x: 5.7956886, y: 0.95911396, z: 0}
+  m_Center: {x: 5.795065, y: 0.64661694, z: 0}
+--- !u!114 &426444827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300429209380894057}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 1eed41fab63094f468673d6a388cc1d3, type: 2}
+--- !u!114 &426444828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300429209380894057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1 &6300429209936151378
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,6 +183,7 @@ GameObject:
   - component: {fileID: 6300429209936151382}
   - component: {fileID: 6300429209936151381}
   - component: {fileID: 6300429209936151380}
+  - component: {fileID: 447298592}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -165,8 +199,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6300429209936151378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.6, y: 0.67, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 5.6, y: -0.22, z: 0}
+  m_LocalScale: {x: 1, y: 2.0415, z: 1}
   m_Children: []
   m_Father: {fileID: 6300429209380894058}
   m_RootOrder: 0
@@ -225,8 +259,21 @@ CapsuleCollider:
   m_GameObject: {fileID: 6300429209936151378}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1.6504738
-  m_Height: 3.3009477
+  m_Enabled: 0
+  m_Radius: 1.9012568
+  m_Height: 3.9612334
   m_Direction: 1
-  m_Center: {x: 0.09382257, y: -0.5, z: 0}
+  m_Center: {x: 0.20294103, y: -0.8, z: 0.30038428}
+--- !u!65 &447298592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6300429209936151378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.795462, y: 1.9462658, z: 2.4981773}
+  m_Center: {x: 0.08101645, y: -0.026867202, z: 0.17840312}
