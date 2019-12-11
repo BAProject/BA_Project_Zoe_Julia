@@ -1,15 +1,44 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Source : MonoBehaviour
 {
+    public enum SourceType
+    {
+        Water,
+        Nutrient
+    }
+
     [SerializeField] private int _nutrients;
-    [SerializeField] private string type;
-    [SerializeField] private float radius;
+    [SerializeField] private SourceType _type;
+    [SerializeField] private float _radius;
 
     private void Start()
     {
-        RegisterWithTrees(GetTreesInRadius());
+        NotifyTreesInRadius();
+    }
+
+    private void NotifyTreesInRadius()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, _radius);
+
+        foreach (Collider collider in colliders)
+        {
+            GameObject obj = collider.gameObject;
+
+            if (obj.tag == "Tree")
+            {
+                Debug.Log("Found Tag Tree");
+                Tree tree = obj.GetComponent<Tree>();
+                if (tree != null)
+                {
+                    Debug.Log("Found Script Tree");
+                    if (_type == SourceType.Water)
+                        tree.WaterSources.Add(this);
+                    else if (_type == SourceType.Nutrient)
+                        tree.NutrientSources.Add(this);
+                }
+            }
+        }
     }
 
     public int TryGetNutrients(int amount)
@@ -25,33 +54,5 @@ public class Source : MonoBehaviour
             _nutrients = 0;
             return rest;
         }
-    }
-
-    private List<Plant> GetTreesInRadius()
-    {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
-        
-        foreach(Collider collider in colliders)
-        {
-            GameObject obj = collider.gameObject;
-            if (obj.tag == "Tree")
-            {
-                Tree tree = obj.GetComponent<Tree>();
-                if (tree != null)
-                    tree.WaterSources.Add(this);
-            }
-        }
-
-        return new List<Plant>();
-    }
-
-    private void RegisterWithTrees(List<Plant> plants)
-    {
-        // for each plant register this source.
-    }
-
-    public void GetNutrients()
-    {
-
     }
 }

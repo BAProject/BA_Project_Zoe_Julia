@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4348082325541519254}
   - component: {fileID: 5193178179257019999}
   - component: {fileID: 1320356208579176426}
-  - component: {fileID: 2486368500456593059}
+  - component: {fileID: 114848646107040056}
   m_Layer: 0
   m_Name: prefab_waterSource
   m_TagString: Untagged
@@ -79,19 +79,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &2486368500456593059
-SphereCollider:
+--- !u!114 &114848646107040056
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5075930896236636080}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286dfe14a874f2b4283d49c59b0ab876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nutrients: 100
+  _type: 0
+  _radius: 0
 --- !u!1 &6271882965737888938
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,14 +105,13 @@ GameObject:
   - component: {fileID: 8872231969637034073}
   - component: {fileID: 2682571721132815557}
   - component: {fileID: 145905014811962735}
-  - component: {fileID: 8420193883260882171}
   m_Layer: 0
   m_Name: radius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8872231969637034073
 Transform:
   m_ObjectHideFlags: 0
@@ -170,16 +171,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &8420193883260882171
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6271882965737888938}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}

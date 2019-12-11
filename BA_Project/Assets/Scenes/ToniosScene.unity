@@ -351,6 +351,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114848646107040056, guid: b84fd2ebf4cf22644a936a1c3fe37c4e,
+        type: 3}
+      propertyPath: _radius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5075930896236636080, guid: b84fd2ebf4cf22644a936a1c3fe37c4e,
         type: 3}
       propertyPath: m_Name
@@ -483,7 +488,7 @@ PrefabInstance:
     - target: {fileID: 4469947077066921921, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
         type: 3}
       propertyPath: _nutrientSources.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4469947077066921921, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
         type: 3}

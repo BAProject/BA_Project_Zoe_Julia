@@ -14,18 +14,24 @@ public class Plant : MonoBehaviour
     [SerializeField] private List<Source> _nutrientSources;
     [SerializeField] private List<Source> _waterSources;
 
-    private void Start()
+    private void Awake()
     {
         _currentEnergy = new ReactiveProperty<int>(100);
         _currentWater = new ReactiveProperty<int>(100);
+        _nutrientSources = new List<Source>();
+        _waterSources = new List<Source>();
 
         _currentEnergy.Subscribe(energy => Debug.Log("Energy changed to " + energy.ToString()));
         _currentWater.Subscribe(water => Debug.Log("Water changed to " + water.ToString()));
 
         _currentEnergy.Subscribe(_ => GetEnergyIfNeeded());
         _currentWater.Subscribe(_ => GetWaterIfNeeded());
+    }
 
+    private void Update()
+    {
         UseUpEnergy(20); // test
+        Debug.Log("elements in nutrient sources: " + _nutrientSources.Count);
     }
 
     public List<Source> NutrientSources
