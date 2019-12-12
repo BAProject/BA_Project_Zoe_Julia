@@ -1,26 +1,21 @@
 fileFormatVersion: 2
-guid: f25992288a91a9f4ba62db5b7a628240
+guid: 018a13625f67f7a4cae0a247f0ff36d0
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Tree
-    100004: Tree_Crown
-    100006: Tree.001
+    100002: Tree.002
+    100004: Tree_Crown.002
     400000: //RootNode
-    400002: Tree
-    400004: Tree_Crown
-    400006: Tree.001
+    400002: Tree.002
+    400004: Tree_Crown.002
     2100000: No Name
-    2300000: Tree
-    2300002: Tree_Crown
-    2300004: Tree.001
-    3300000: Tree
-    3300002: Tree_Crown
-    3300004: Tree.001
-    4300000: Tree_Crown
-    4300002: Tree
-    4300004: Tree.001
+    2300000: Tree.002
+    2300002: Tree_Crown.002
+    3300000: Tree.002
+    3300002: Tree_Crown.002
+    4300000: Tree.002
+    4300002: Tree_Crown.002
   externalObjects: {}
   materials:
     importMaterials: 1
