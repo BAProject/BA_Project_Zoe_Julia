@@ -14,6 +14,8 @@ public class Plant : MonoBehaviour
     [SerializeField] private List<Source> _nutrientSources;
     [SerializeField] private List<Source> _waterSources;
 
+    [SerializeField] private float _radius;
+
     private void Awake()
     {
         _currentEnergy = new ReactiveProperty<int>(100);
@@ -21,17 +23,32 @@ public class Plant : MonoBehaviour
         _nutrientSources = new List<Source>();
         _waterSources = new List<Source>();
 
-        _currentEnergy.Subscribe(energy => Debug.Log("Energy changed to " + energy.ToString()));
-        _currentWater.Subscribe(water => Debug.Log("Water changed to " + water.ToString()));
+        //_currentEnergy.Subscribe(energy => Debug.Log("Energy changed to " + energy.ToString()));
+        //_currentWater.Subscribe(water => Debug.Log("Water changed to " + water.ToString()));
 
         _currentEnergy.Subscribe(_ => GetEnergyIfNeeded());
         _currentWater.Subscribe(_ => GetWaterIfNeeded());
+
+        Level.instance.RegisterPlant(this);
+    }
+
+    private void OnDestroy()
+    {
+        Level.instance.UnregisterPlant(this);
     }
 
     private void Update()
     {
         UseUpEnergy(20); // test
-        Debug.Log("elements in nutrient sources: " + _nutrientSources.Count);
+        //Debug.Log("elements in nutrient sources: " + _nutrientSources.Count);
+
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            if(Level.instance.IsPlayerInRange(transform.position, 4f))
+            {
+                CreateAndEmitSignal(Signal.SignalType.Fume);
+            }
+        }
     }
 
     public List<Source> NutrientSources
@@ -104,5 +121,47 @@ public class Plant : MonoBehaviour
     private void CommunicateViaFume(Danger danger)
     {
 
+    }
+
+    public virtual void CreateAndEmitSignal(Signal.SignalType signalType)
+    {
+        Signal signal = new Signal(this, signalType);
+        EmitSignal(signal);
+    }
+
+    protected virtual void EmitSignal(Signal signal)
+    {
+        List<Plant> plantsInRange = Level.instance.GetPlantsInRange(transform.position, _radius);
+        Debug.Log("emit signal of type " + signal.signalType + " from " + gameObject.name + " with radius " + _radius);
+
+        foreach(Plant plant in plantsInRange)
+        {
+            if(signal.CanBeReceived(plant) && plant.CanHandleSignal(signal))
+            {
+                plant.ReceiveSignal(signal);
+            }
+        }
+    }
+
+    protected virtual void ReceiveSignal(Signal signal)
+    {
+        Debug.Log("receive signal of type " + signal.signalType + " at " + gameObject.name);
+        signal.OnReceived(this);
+
+        if(signal.isRepeated)
+        {
+            EmitSignal(signal);
+        }
+    }
+
+    protected virtual bool CanHandleSignal(Signal signal)
+    {
+        return true;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(0f, 0.5f, 0f, 0.2f);
+        Gizmos.DrawSphere(transform.position, _radius);
     }
 }
