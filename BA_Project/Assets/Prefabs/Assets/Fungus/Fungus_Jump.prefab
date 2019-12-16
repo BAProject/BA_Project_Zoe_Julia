@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 426444827}
   - component: {fileID: 426444828}
   m_Layer: 0
-  m_Name: Fungus
+  m_Name: Fungus_Jump
   m_TagString: Fungus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,7 @@ CapsuleCollider:
   m_Radius: 0.24360922
   m_Height: 0.6883351
   m_Direction: 1
-  m_Center: {x: 0, y: 0.8, z: 0}
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!114 &426444827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4bca37d6226a1ce43b60a436443c5df1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.411
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4bca37d6226a1ce43b60a436443c5df1, type: 3}
       propertyPath: m_LocalPosition.z
