@@ -6,15 +6,17 @@ public class Plant : MonoBehaviour
 {
     [SerializeField] private ReactiveProperty<int> _currentWater;
     [SerializeField] private ReactiveProperty<int> _currentEnergy;
-    [SerializeField] private bool _isHealthy;
-    [SerializeField] private Danger[] _dangersCurrentlyAwareOf;
-    [SerializeField] private Plant[] _plantsInGroup;
-    [SerializeField] private Plant[] _plantsInFumeReach;
+    //[SerializeField] private bool _isHealthy;
+    //[SerializeField] private Danger[] _dangersCurrentlyAwareOf;
+    //[SerializeField] private Plant[] _plantsInGroup;
+    //[SerializeField] private Plant[] _plantsInFumeReach;
 
     [SerializeField] private List<Source> _nutrientSources;
     [SerializeField] private List<Source> _waterSources;
 
     [SerializeField] private float _radius;
+
+    [SerializeField] private Controllable _treeControl;
 
     private void Awake()
     {
@@ -43,7 +45,7 @@ public class Plant : MonoBehaviour
 
     private void Update()
     {
-        UseUpEnergy(20); // test
+        //UseUpEnergy(20); // test
         //Debug.Log("elements in nutrient sources: " + _nutrientSources.Count);
 
         if(Input.GetKeyDown(KeyCode.F))
@@ -110,21 +112,6 @@ public class Plant : MonoBehaviour
         }
 
         _currentWater.Value += waterReturned;
-    }
-
-    private void ReceiveWarning()
-    {
-
-    }
-
-    private void CommunicateViaRoots(Danger danger)
-    {
-
-    }
-
-    private void CommunicateViaFume(Danger danger)
-    {
-
     }
 
     public virtual void CreateAndEmitSignal(Signal.SignalType signalType)

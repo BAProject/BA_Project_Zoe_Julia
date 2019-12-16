@@ -27,11 +27,11 @@ public class Source : MonoBehaviour
 
             if (obj.tag == "Tree")
             {
-                Debug.Log("Found Tag Tree");
+                //Debug.Log("Found Tag Tree");
                 Tree tree = obj.GetComponent<Tree>();
                 if (tree != null)
                 {
-                    Debug.Log("Found Script Tree");
+                    //Debug.Log("Found Script Tree");
                     if (_type == SourceType.Water)
                         tree.WaterSources.Add(this);
                     else if (_type == SourceType.Nutrient)

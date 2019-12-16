@@ -351,15 +351,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114848646107040056, guid: b84fd2ebf4cf22644a936a1c3fe37c4e,
-        type: 3}
-      propertyPath: _radius
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 5075930896236636080, guid: b84fd2ebf4cf22644a936a1c3fe37c4e,
         type: 3}
       propertyPath: m_Name
       value: prefab_waterSource
+      objectReference: {fileID: 0}
+    - target: {fileID: 114848646107040056, guid: b84fd2ebf4cf22644a936a1c3fe37c4e,
+        type: 3}
+      propertyPath: _radius
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4348082325541519254, guid: b84fd2ebf4cf22644a936a1c3fe37c4e,
         type: 3}
