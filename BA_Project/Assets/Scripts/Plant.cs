@@ -29,6 +29,10 @@ public class Plant : MonoBehaviour
         _currentEnergy.Subscribe(_ => GetEnergyIfNeeded());
         _currentWater.Subscribe(_ => GetWaterIfNeeded());
 
+    }
+
+    private void Start()
+    {
         Level.instance.RegisterPlant(this);
     }
 
