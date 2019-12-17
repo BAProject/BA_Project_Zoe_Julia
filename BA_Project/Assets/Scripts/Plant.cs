@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class Plant : MonoBehaviour
 {
+    public bool isGroupMaster = false;
+
     [SerializeField] private ReactiveProperty<int> _currentWater;
     [SerializeField] private ReactiveProperty<int> _currentEnergy;
     //[SerializeField] private bool _isHealthy;
@@ -18,6 +20,8 @@ public class Plant : MonoBehaviour
 
     [SerializeField] private Controllable _treeControl;
 
+    private PlantGroup plantGroup;
+
     private void Awake()
     {
         _currentEnergy = new ReactiveProperty<int>(100);
@@ -30,12 +34,16 @@ public class Plant : MonoBehaviour
 
         _currentEnergy.Subscribe(_ => GetEnergyIfNeeded());
         _currentWater.Subscribe(_ => GetWaterIfNeeded());
-
     }
 
     private void Start()
     {
         Level.instance.RegisterPlant(this);
+
+        if(isGroupMaster)
+        {
+            InitializeGroup();
+        }
     }
 
     private void OnDestroy()
@@ -54,6 +62,18 @@ public class Plant : MonoBehaviour
             {
                 CreateAndEmitSignal(Signal.SignalType.Fume);
             }
+        }
+    }
+
+    private void InitializeGroup()
+    {
+        plantGroup = new PlantGroup();
+        plantGroup.master = this;
+        plantGroup.plants = Level.instance.GetPlantsInRange(transform.position, _radius);
+
+        foreach(Plant plant in plantGroup.plants)
+        {
+            plant.plantGroup = plantGroup;
         }
     }
 
@@ -154,5 +174,14 @@ public class Plant : MonoBehaviour
     {
         Gizmos.color = new Color(0f, 0.5f, 0f, 0.2f);
         Gizmos.DrawSphere(transform.position, _radius);
+
+        if(isGroupMaster && Application.isPlaying)
+        {
+            Gizmos.color = new Color(0f, 1f, 1f, 1f);
+            foreach (Plant plant in plantGroup.plants)
+            {
+                Gizmos.DrawLine(transform.position, plant.transform.position);
+            }
+        }
     }
 }
