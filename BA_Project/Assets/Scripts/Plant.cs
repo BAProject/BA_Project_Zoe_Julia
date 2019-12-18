@@ -38,7 +38,7 @@ public class Plant : MonoBehaviour
 
     private void Start()
     {
-        Level.instance.RegisterPlant(this);
+        GameInitialization.instance.level.RegisterPlant(this);
 
         if(isGroupMaster)
         {
@@ -48,7 +48,7 @@ public class Plant : MonoBehaviour
 
     private void OnDestroy()
     {
-        Level.instance.UnregisterPlant(this);
+        GameInitialization.instance.level.UnregisterPlant(this);
     }
 
     private void Update()
@@ -58,7 +58,7 @@ public class Plant : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.F))
         {
-            if(Level.instance.IsPlayerInRange(transform.position, 4f))
+            if(GameInitialization.instance.level.IsPlayerInRange(transform.position, 4f))
             {
                 CreateAndEmitSignal(Signal.SignalType.Fume);
             }
@@ -69,7 +69,7 @@ public class Plant : MonoBehaviour
     {
         plantGroup = new PlantGroup();
         plantGroup.master = this;
-        plantGroup.plants = Level.instance.GetPlantsInRange(transform.position, _radius);
+        plantGroup.plants = GameInitialization.instance.level.GetPlantsInRange(transform.position, _radius);
 
         foreach(Plant plant in plantGroup.plants)
         {
@@ -142,7 +142,7 @@ public class Plant : MonoBehaviour
 
     protected virtual void EmitSignal(Signal signal)
     {
-        List<Plant> plantsInRange = Level.instance.GetPlantsInRange(transform.position, _radius);
+        List<Plant> plantsInRange = GameInitialization.instance.level.GetPlantsInRange(transform.position, _radius);
         Debug.Log("emit signal of type " + signal.signalType + " from " + gameObject.name + " with radius " + _radius);
 
         foreach(Plant plant in plantsInRange)

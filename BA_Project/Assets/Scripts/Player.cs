@@ -18,7 +18,7 @@ public class ControllingTrees : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            if (Level.instance.IsPlayerInRange(transform.position, 4f))
+            if (GameInitialization.instance.level.IsPlayerInRange(transform.position, 4f))
             {
                 //treeControl.ControllTree();
             }

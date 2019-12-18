@@ -4,16 +4,9 @@ using UnityEngine;
 
 public class Level : MonoBehaviour
 {
-    public static Level instance;
-
     [SerializeField] private List<Plant> _allPlants = new List<Plant>();
 
     private Transform playerTransform;
-
-    private void Awake()
-    {
-        instance = this;
-    }
 
     public void RegisterPlant(Plant plant)
     {
