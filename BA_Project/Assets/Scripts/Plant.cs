@@ -9,12 +9,12 @@ public class Plant : MonoBehaviour
     [SerializeField] private ReactiveProperty<int> _currentWater;
     [SerializeField] private ReactiveProperty<int> _currentEnergy;
 
-    [SerializeField] private List<Source> _nutrientSources;
-    [SerializeField] private List<Source> _waterSources;
+    private List<Source> _nutrientSources;
+    private List<Source> _waterSources;
 
     [SerializeField] private float _radius;
 
-    [SerializeField] private Controllable _treeControl;
+    [SerializeField] private Controllable _controllable;
 
     private PlantGroup plantGroup;
 
@@ -52,13 +52,13 @@ public class Plant : MonoBehaviour
         //UseUpEnergy(20); // test
         //Debug.Log("elements in nutrient sources: " + _nutrientSources.Count);
 
-        if(Input.GetKeyDown(KeyCode.G))
-        {
-            if(GameInitialization.instance.level.IsPlayerInRange(transform.position, 4f))
-            {
-                CreateAndEmitSignal(Signal.SignalType.Fume);
-            }
-        }
+        //if(Input.GetKeyDown(KeyCode.G))
+        //{
+        //    if(GameInitialization.instance.level.IsPlayerInRange(transform.position, 4f))
+        //    {
+        //        CreateAndEmitSignal(Signal.SignalType.Fume);
+        //    }
+        //}
     }
 
     private void InitializeGroup()

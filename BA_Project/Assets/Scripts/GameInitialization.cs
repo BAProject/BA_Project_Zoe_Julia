@@ -31,5 +31,6 @@ public class GameInitialization : MonoBehaviour
     private void InitializeUI()
     {
         ui.HideTreeUi();
+        ui.HideControllableUi();
     }
 }

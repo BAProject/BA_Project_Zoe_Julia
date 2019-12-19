@@ -5,11 +5,11 @@ public class Controllable : MonoBehaviour
 {
     public void ControllTree()
     {
-        // open tree UI
+        GameInitialization.instance.ui.ShowTreeUi();
     }
 
     public void UnControllTree()
     {
-        // close tree UI
+        GameInitialization.instance.ui.HideTreeUi();
     }
 }
