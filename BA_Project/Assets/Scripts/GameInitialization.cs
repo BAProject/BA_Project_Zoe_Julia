@@ -10,7 +10,26 @@ public class GameInitialization : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        InitializeGame();
     }
 
+    private void InitializeGame()
+    {
+        InitializeUI();
+    }
+
+    private void InitializeUI()
+    {
+        ui.HideTreeUi();
+    }
 }

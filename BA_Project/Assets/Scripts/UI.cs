@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-    private GameObject _treeUi;
+    [SerializeField] private GameObject _treeUi;
 
-    public void ShowTreeUi()
+    public void ShowTreeUi(Controllable tree)
     {
         _treeUi.SetActive(true);
     }

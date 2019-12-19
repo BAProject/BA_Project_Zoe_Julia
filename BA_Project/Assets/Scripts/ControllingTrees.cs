@@ -42,9 +42,9 @@ public class Player : MonoBehaviour
         if (_controllableTree == null)
             return;
 
-        // Show hint: control tree key
+        GameInitialization.instance.ui.ShowTreeUi(_controllableTree);
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             ControllTree();
         }

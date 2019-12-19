@@ -8,10 +8,6 @@ public class Plant : MonoBehaviour
 
     [SerializeField] private ReactiveProperty<int> _currentWater;
     [SerializeField] private ReactiveProperty<int> _currentEnergy;
-    //[SerializeField] private bool _isHealthy;
-    //[SerializeField] private Danger[] _dangersCurrentlyAwareOf;
-    //[SerializeField] private Plant[] _plantsInGroup;
-    //[SerializeField] private Plant[] _plantsInFumeReach;
 
     [SerializeField] private List<Source> _nutrientSources;
     [SerializeField] private List<Source> _waterSources;
@@ -56,7 +52,7 @@ public class Plant : MonoBehaviour
         //UseUpEnergy(20); // test
         //Debug.Log("elements in nutrient sources: " + _nutrientSources.Count);
 
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetKeyDown(KeyCode.G))
         {
             if(GameInitialization.instance.level.IsPlayerInRange(transform.position, 4f))
             {
