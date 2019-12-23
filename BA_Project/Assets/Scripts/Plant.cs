@@ -14,8 +14,6 @@ public class Plant : MonoBehaviour
 
     [SerializeField] private float _radius;
 
-    [SerializeField] private Controllable _controllable;
-
     private PlantGroup plantGroup;
 
     private void Awake()
