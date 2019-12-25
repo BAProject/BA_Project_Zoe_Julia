@@ -39,17 +39,21 @@ public class ControllingTrees : MonoBehaviour
             if (Input.GetKeyDown(_controlKey))
             {
                 UnControlTree();
-                GameInitialization.instance.ui.ShowControllableUi();
             }
         }
         else
         {
             ScanRadiusForControllable();
 
-            if (Input.GetKeyDown(_controlKey) && _isInTreeRange)
-            {
+            if (_controllableTree)
+                GameInitialization.instance.ui.ShowControllableUi();
+            else
                 GameInitialization.instance.ui.HideControllableUi();
+
+            if (Input.GetKeyDown(_controlKey) && _isInTreeRange)
+            {                
                 ControlTree();
+                GameInitialization.instance.ui.HideControllableUi();
             }
         }        
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Transform cam;
+    public MeshRenderer meshRenderer;
     public float speed = 5f;
     public float jumpHeight = 2f;
     public float groundDistance = 0.2f;
@@ -19,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!cam)
             cam = Camera.main.transform;
+
+        if (!meshRenderer)
+            meshRenderer = GetComponentInChildren<MeshRenderer>();
     }
 
     void Start()
@@ -47,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
     public void SetEnabled(bool isEnabled)
     {
         _body.velocity = Vector3.zero;
+        meshRenderer.enabled = isEnabled;
         enabled = isEnabled;
     }
 }
