@@ -6,8 +6,9 @@ using UnityEngine;
 
 public class ControllingTrees : MonoBehaviour
 {
+    [SerializeField] private KeyCode _controlKey;
     [SerializeField] private float _treeSearchRadius;
-    [SerializeField] private FlowMachine _characterController;
+    [SerializeField] private PlayerMovement _characterController;
 
     private Controllable _controllableTree;
     private List<Controllable> _treesInRange;
@@ -23,33 +24,34 @@ public class ControllingTrees : MonoBehaviour
 
     public void DisableMovement()
     {
-        _characterController.enabled = false;
+        _characterController.SetEnabled(false);
     }
 
     public void EnableMovement()
     {
-        _characterController.enabled = true;
+        _characterController.SetEnabled(true);
     }
 
     private void Update()
     {
-        ScanRadiusForControllable();
-
-        if (Input.GetKeyDown(KeyCode.T))
+        if(_isControlling)
         {
-            ScanRadiusForControllable();
-
-            if (!_isControlling && _isInTreeRange)
+            if (Input.GetKeyDown(_controlKey))
             {
-                GameInitialization.instance.ui.HideControllableUi();
-                ControllTree();
-            }
-            else if (_isControlling && _isInTreeRange)
-            {
-                UnControllTree();
+                UnControlTree();
                 GameInitialization.instance.ui.ShowControllableUi();
             }
         }
+        else
+        {
+            ScanRadiusForControllable();
+
+            if (Input.GetKeyDown(_controlKey) && _isInTreeRange)
+            {
+                GameInitialization.instance.ui.HideControllableUi();
+                ControlTree();
+            }
+        }        
     }
 
     private void ScanRadiusForControllable()
@@ -63,11 +65,14 @@ public class ControllingTrees : MonoBehaviour
         foreach (Collider collider in colliders)
         {
             GameObject obj = collider.gameObject;
-            if (obj.tag == "Tree")
+            if (obj.tag == Tags.TreeTag)
             {
                 Controllable controllabe = obj.GetComponent<Controllable>();
                 if (controllabe)
+                {
+                    Debug.Log(controllabe.name);
                     scanResults.Add(controllabe);
+                }                    
             }
         }
 
@@ -96,7 +101,7 @@ public class ControllingTrees : MonoBehaviour
     //    GameObject obj = other.gameObject;
     //    bool wasInRange = _isInTreeRange;
 
-    //    if (obj.tag == "Tree")
+    //    if (obj.tag == Tags.TreeTag)
     //    {
     //        Controllable controllable = obj.GetComponent<Controllable>();
     //        if (controllable)
@@ -127,19 +132,24 @@ public class ControllingTrees : MonoBehaviour
     //        GameInitialization.instance.ui.HideControllableUi();
     //}
 
-    private void ControllTree()
+    private void ControlTree()
     {
         Debug.Log("Controlling Tree");
         _isControlling = true;
         DisableMovement();
-        _controllableTree.ControllTree();
+        _controllableTree.ControlTree();
     }
 
-    private void UnControllTree()
+    private void UnControlTree()
     {
         Debug.Log("Un-Controlling Tree");
-        _controllableTree.UnControllTree();
+        _controllableTree.UnControlTree();
         EnableMovement();
         _isControlling = false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, _treeSearchRadius);
     }
 }

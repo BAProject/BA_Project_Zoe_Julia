@@ -20,7 +20,17 @@ public class GameInitialization : MonoBehaviour
             return;
         }
 
+        CheckReferences();
         InitializeGame();
+    }
+
+    private void CheckReferences()
+    {
+        if (!level)
+            level = FindObjectOfType<Level>();
+
+        if (!ui)
+            ui = FindObjectOfType<UI>();
     }
 
     private void InitializeGame()

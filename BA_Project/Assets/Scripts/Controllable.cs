@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class Controllable : MonoBehaviour
 {
-    public void ControllTree()
+    public void ControlTree()
     {
         GameInitialization.instance.ui.ShowTreeUi();
     }
 
-    public void UnControllTree()
+    public void UnControlTree()
     {
         GameInitialization.instance.ui.HideTreeUi();
     }
