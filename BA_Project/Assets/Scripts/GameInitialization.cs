@@ -7,6 +7,7 @@ public class GameInitialization : MonoBehaviour
 
     public Level level;
     public UI ui;
+    public PlayerCamera playerCamera;
 
     private void Awake()
     {
@@ -31,6 +32,9 @@ public class GameInitialization : MonoBehaviour
 
         if (!ui)
             ui = FindObjectOfType<UI>();
+
+        if (!playerCamera)
+            playerCamera = FindObjectOfType<PlayerCamera>();
     }
 
     private void InitializeGame()

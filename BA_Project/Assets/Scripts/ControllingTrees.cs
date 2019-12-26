@@ -142,6 +142,7 @@ public class ControllingTrees : MonoBehaviour
         _isControlling = true;
         DisableMovement();
         _controllableTree.ControlTree();
+        GameInitialization.instance.playerCamera.SetOrbitTarget(_controllableTree.controlPivot.gameObject);
     }
 
     private void UnControlTree()
@@ -150,6 +151,7 @@ public class ControllingTrees : MonoBehaviour
         _controllableTree.UnControlTree();
         EnableMovement();
         _isControlling = false;
+        GameInitialization.instance.playerCamera.SetOrbitTarget(gameObject);
     }
 
     private void OnDrawGizmos()
