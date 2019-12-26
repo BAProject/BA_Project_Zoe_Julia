@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2663493436008870224}
   - component: {fileID: 5505918472921513112}
-  - component: {fileID: 4469947077066921921}
   m_Layer: 0
   m_Name: Broke_Tree_4
   m_TagString: Tree
@@ -47,24 +46,6 @@ CapsuleCollider:
   m_Height: 3.140823
   m_Direction: 1
   m_Center: {x: -0.024004877, y: 1.313195, z: -0.07334125}
---- !u!114 &4469947077066921921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7160768422027222117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98b98ee6ed4c7eb4e827498aaed2f3b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isHealthy: 1
-  _plantsInGroup: []
-  _plantsInFumeReach: []
-  _nutrientSources: []
-  _waterSources: []
-  _radius: 0
 --- !u!1001 &6359487729479891403
 PrefabInstance:
   m_ObjectHideFlags: 0
