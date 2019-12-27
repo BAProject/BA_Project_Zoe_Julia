@@ -74,7 +74,7 @@ public class ControllingTrees : MonoBehaviour
                 Controllable controllabe = obj.GetComponent<Controllable>();
                 if (controllabe)
                 {
-                    Debug.Log(controllabe.name);
+                    //Debug.Log(controllabe.name);
                     scanResults.Add(controllabe);
                 }                    
             }

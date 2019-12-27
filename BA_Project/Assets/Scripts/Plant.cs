@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class Plant : MonoBehaviour
 {
     public bool isGroupMaster = false;
+    public PlantUI plantUI;
 
     [SerializeField] private ReactiveProperty<int> _currentWater;
     [SerializeField] private ReactiveProperty<int> _currentEnergy;
@@ -16,10 +17,12 @@ public class Plant : MonoBehaviour
 
     private PlantGroup plantGroup;
 
+    private const int maxEnergyWater = 1000;
+
     private void Awake()
     {
-        _currentEnergy = new ReactiveProperty<int>(100);
-        _currentWater = new ReactiveProperty<int>(100);
+        _currentEnergy = new ReactiveProperty<int>(maxEnergyWater);
+        _currentWater = new ReactiveProperty<int>(maxEnergyWater);
         _nutrientSources = new List<Source>();
         _waterSources = new List<Source>();
 
@@ -47,6 +50,8 @@ public class Plant : MonoBehaviour
 
     private void Update()
     {
+        UseUpEnergy(1);
+        UpdateUI();
         //UseUpEnergy(20); // test
         //Debug.Log("elements in nutrient sources: " + _nutrientSources.Count);
 
@@ -162,6 +167,22 @@ public class Plant : MonoBehaviour
     protected virtual bool CanHandleSignal(Signal signal)
     {
         return true;
+    }
+
+    public virtual void SetPlantControlled(bool controlled) 
+    {
+        SetUIActive(controlled);
+    }
+
+    public virtual void SetUIActive(bool active) 
+    {
+        plantUI.gameObject.SetActive(active);
+    }
+
+    private void UpdateUI()
+    {
+        plantUI.SetNutrientFill((float)_currentEnergy.Value / maxEnergyWater);
+        plantUI.SetWaterFill((float)_currentWater.Value / maxEnergyWater);
     }
 
     private void OnDrawGizmos()
