@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using UniRx;
 using System.Collections.Generic;
+using System.Collections;
 
 public class Plant : MonoBehaviour
 {
     public bool isGroupMaster = false;
     public PlantUI plantUI;
+    public Transform connectionsHolder;
+    public LineRenderer connectionPrefab;
 
     [SerializeField] private ReactiveProperty<int> _currentWater;
     [SerializeField] private ReactiveProperty<int> _currentEnergy;
@@ -31,16 +34,16 @@ public class Plant : MonoBehaviour
 
         _currentEnergy.Subscribe(_ => GetEnergyIfNeeded());
         _currentWater.Subscribe(_ => GetWaterIfNeeded());
+
+        GameInitialization.instance.level.RegisterPlant(this);
     }
 
-    private void Start()
-    {
-        GameInitialization.instance.level.RegisterPlant(this);
-
-        if(isGroupMaster)
-        {
-            InitializeGroup();
-        }
+    private IEnumerator Start()
+    {        
+        InitializeGroup();
+        // Wait one frame for all plant groups to be initialized
+        yield return null;
+        CreateConnections();
     }
 
     private void OnDestroy()
@@ -66,14 +69,33 @@ public class Plant : MonoBehaviour
 
     private void InitializeGroup()
     {
-        plantGroup = new PlantGroup();
-        plantGroup.master = this;
-        plantGroup.plants = GameInitialization.instance.level.GetPlantsInRange(transform.position, _radius);
-
-        foreach(Plant plant in plantGroup.plants)
+        if (isGroupMaster)
         {
-            plant.plantGroup = plantGroup;
-        }
+            plantGroup = new PlantGroup();
+            plantGroup.master = this;
+            plantGroup.plants = GameInitialization.instance.level.GetPlantsInRange(transform.position, _radius);
+
+            foreach (Plant plant in plantGroup.plants)
+            {
+                plant.plantGroup = plantGroup;
+            }
+        }      
+    }
+
+    private void CreateConnections()
+    {
+        if(plantGroup != null)
+        {
+            foreach (Plant plant in plantGroup.plants)
+            {
+                if (plant != this)
+                {
+                    LineRenderer connection = Instantiate(connectionPrefab, connectionsHolder);
+                    connection.SetPosition(0, transform.position);
+                    connection.SetPosition(1, plant.transform.position);
+                }
+            }
+        }        
     }
 
     public List<Source> NutrientSources
@@ -172,6 +194,7 @@ public class Plant : MonoBehaviour
     public virtual void SetPlantControlled(bool controlled) 
     {
         SetUIActive(controlled);
+        connectionsHolder.gameObject.SetActive(controlled);
     }
 
     public virtual void SetUIActive(bool active) 
