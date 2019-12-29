@@ -6,12 +6,14 @@ using UnityEngine;
 
 public class ControllingTrees : MonoBehaviour
 {
+    [SerializeField] private Camera _mainCam;
     [SerializeField] private KeyCode _controlKey;
     [SerializeField] private float _treeSearchRadius;
     [SerializeField] private PlayerMovement _characterController;
 
     private Controllable _controllableTree;
     private List<Controllable> _treesInRange;
+    private Tree _currentMouseOverTree;
     private bool _isControlling;
     private bool _isInTreeRange;
 
@@ -20,6 +22,9 @@ public class ControllingTrees : MonoBehaviour
         _isControlling = false;
         _isInTreeRange = false;
         _treesInRange = new List<Controllable>();
+
+        if (!_mainCam)
+            _mainCam = Camera.main;
     }
 
     public void DisableMovement()
@@ -40,6 +45,7 @@ public class ControllingTrees : MonoBehaviour
             {
                 UnControlTree();
             }
+            CheckMouseOverTree();
         }
         else
         {
@@ -98,6 +104,47 @@ public class ControllingTrees : MonoBehaviour
             _controllableTree = newTreesInRange[0];
         else
             _controllableTree = _treesInRange[0];
+    }
+
+    private void CheckMouseOverTree()
+    {
+        RaycastHit hit;
+        Ray ray = _mainCam.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            Transform objectHit = hit.transform;
+            Tree tree = objectHit.GetComponent<Tree>();
+
+            if(tree)
+            {
+                if(tree.gameObject != _controllableTree.gameObject && _controllableTree.controlledPlant.DoesPlantGroupContain(tree))
+                {
+                    if (tree != _currentMouseOverTree)
+                        UnfocusCurrentMouseOverTree();
+
+                    tree.SetUIActive(true);
+                    _currentMouseOverTree = tree;
+                }                
+            }
+            else
+            {
+                UnfocusCurrentMouseOverTree();
+            }
+        }
+        else
+        {
+            UnfocusCurrentMouseOverTree();
+        }
+    }
+
+    private void UnfocusCurrentMouseOverTree()
+    {
+        if (_currentMouseOverTree)
+        {
+            _currentMouseOverTree.SetUIActive(false);
+            _currentMouseOverTree = null;
+        }
     }
 
     //private void OnTriggerEnter(Collider other)

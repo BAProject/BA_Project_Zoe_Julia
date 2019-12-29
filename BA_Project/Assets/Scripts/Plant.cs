@@ -208,6 +208,14 @@ public class Plant : MonoBehaviour
         plantUI.SetWaterFill((float)_currentWater.Value / maxEnergyWater);
     }
 
+    public bool DoesPlantGroupContain(Plant plant)
+    {
+        if (plantGroup == null)
+            return false;
+
+        return plantGroup.plants.Contains(plant);
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = new Color(0f, 0.5f, 0f, 0.2f);

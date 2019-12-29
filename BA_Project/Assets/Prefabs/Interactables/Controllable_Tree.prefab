@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 784402216543062385}
   - component: {fileID: 8683576879459197480}
   - component: {fileID: 5082930126535322949}
+  - component: {fileID: 8669757862493590800}
   m_Layer: 0
   m_Name: Controllable_Tree
   m_TagString: Tree
@@ -349,6 +350,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controlPivot: {fileID: 9118742274715212528}
   controlledPlant: {fileID: 8683576879459197480}
+--- !u!136 &8669757862493590800
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2732025766801779084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.337
+  m_Height: 5.9088955
+  m_Direction: 1
+  m_Center: {x: -0.08829662, y: 2.6972313, z: -0.007386774}
 --- !u!1 &4439964450215822702
 GameObject:
   m_ObjectHideFlags: 0
