@@ -4,8 +4,19 @@ using UnityEngine;
 
 public class UI : MonoBehaviour
 {
+    [SerializeField] private RectTransform _cursorImage;
     [SerializeField] private GameObject _controllableUi;
     [SerializeField] private GameObject _treeUi;
+
+    private void Awake()
+    {
+        Cursor.visible = false;
+    }
+
+    private void Update()
+    {
+        _cursorImage.position = Input.mousePosition;
+    }
 
     public void ShowControllableUi()
     {
