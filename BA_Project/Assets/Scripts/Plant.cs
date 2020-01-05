@@ -10,8 +10,8 @@ public class Plant : MonoBehaviour
     public Transform connectionsHolder;
     public LineRenderer connectionPrefab;
 
-    [SerializeField] private ReactiveProperty<int> _currentWater;
-    [SerializeField] private ReactiveProperty<int> _currentEnergy;
+    [SerializeField] public ReactiveProperty<int> _currentWater;
+    [SerializeField] public ReactiveProperty<int> _currentEnergy;
 
     private List<Source> _nutrientSources;
     private List<Source> _waterSources;
