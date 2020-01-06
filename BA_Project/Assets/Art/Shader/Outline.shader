@@ -39,7 +39,6 @@
 
 		SubShader
 		{
-			Tags{ "Queue" = "Transperent"}
 
 			Pass //Render the Outline
 			{
