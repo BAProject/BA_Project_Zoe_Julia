@@ -7429,7 +7429,7 @@ PrefabInstance:
     - target: {fileID: 2732025766801779084, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_Name
-      value: Controllable_Tree
+      value: MasterTree
       objectReference: {fileID: 0}
     - target: {fileID: 7096708938880500921, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
