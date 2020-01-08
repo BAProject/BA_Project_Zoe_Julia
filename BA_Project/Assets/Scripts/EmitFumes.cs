@@ -32,6 +32,11 @@ public class EmitFumes : MonoBehaviour
 			Plant plantScript = GetComponent<Plant>();
 
 		//Call for help when Nutrient level is too low
+		if (plantScript._currentNutrients.Value > 50 && plantScript._currentWater.Value > 50)
+		{
+			FragranceAllGood.GetComponent<ParticleSystem>().enableEmission = true;
+		}
+		
 		if (plantScript._currentNutrients.Value < 50)
 		{
 			FragranceNutrient.GetComponent<ParticleSystem>().enableEmission = true;
@@ -43,6 +48,12 @@ public class EmitFumes : MonoBehaviour
 			FragranceInsects.GetComponent<ParticleSystem>().enableEmission = false;
 		}
 
+		else 
+		{
+			FragranceNutrient.GetComponent<ParticleSystem>().enableEmission = false;
+		}
+
+
 		//Call for help when Water level is too low
 		if (plantScript._currentWater.Value < 50)
 		{
@@ -53,6 +64,11 @@ public class EmitFumes : MonoBehaviour
 			FragranceWater.GetComponent<ParticleSystem>().enableEmission = false;
 			FragranceAllGood.GetComponent<ParticleSystem>().enableEmission = false;
 			FragranceInsects.GetComponent<ParticleSystem>().enableEmission = false;
+		}
+
+		else
+		{
+			FragranceRain.GetComponent<ParticleSystem>().enableEmission = false;
 		}
 
     }
