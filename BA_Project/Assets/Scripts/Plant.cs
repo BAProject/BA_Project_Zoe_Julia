@@ -26,6 +26,9 @@ public class Plant : MonoBehaviour
 
     private PlantGroup plantGroup;
 
+    [SerializeField] bool _isHealthy;
+    [SerializeField] float _sicknessThreshold;
+
     private void Awake()
     {
         _currentNutrients = new ReactiveProperty<float>(_startingNutirents);
@@ -38,6 +41,9 @@ public class Plant : MonoBehaviour
 
         _currentNutrients.Subscribe(_ => GetEnergyIfNeeded());
         _currentWater.Subscribe(_ => GetWaterIfNeeded());
+
+        _currentNutrients.Subscribe(_ => UpdateHealth());
+        _currentWater.Subscribe(_ => UpdateHealth());
 
         GameInitialization.instance.level.RegisterPlant(this);
     }
@@ -60,8 +66,6 @@ public class Plant : MonoBehaviour
         UseUpEnergy(_nutrientConsumption);
         UseUpWater(_waterConsumption);
         UpdateUI();
-        //UseUpEnergy(20); // test
-        //Debug.Log("elements in nutrient sources: " + _nutrientSources.Count);
 
         //if(Input.GetKeyDown(KeyCode.G))
         //{
@@ -239,5 +243,25 @@ public class Plant : MonoBehaviour
                 Gizmos.DrawLine(transform.position, plant.transform.position);
             }
         }
+    }
+
+    private void UpdateHealth()
+    {
+        if (_currentNutrients.Value < _sicknessThreshold | _currentNutrients.Value < _sicknessThreshold)
+            MakeSick();
+        else
+            MakeHealthy();
+    }
+
+    private void MakeSick()
+    {
+        _isHealthy = false;
+
+    }
+
+    private void MakeHealthy()
+    {
+        _isHealthy = true;
+
     }
 }
