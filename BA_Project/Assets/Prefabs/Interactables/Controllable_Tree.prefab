@@ -71,6 +71,7 @@ RectTransform:
   m_Children:
   - {fileID: 6647554667733382723}
   - {fileID: 5103792245352469961}
+  - {fileID: 6471991635917802049}
   m_Father: {fileID: 7096708938880500921}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -334,6 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGroupMaster: 0
   plantUI: {fileID: 362930222466189475}
+  plantUIText: {fileID: 8113587368352887017}
   connectionsHolder: {fileID: 5505818061723108916}
   connectionPrefab: {fileID: 865554358391886617, guid: 7dcf5bbe185857a4597a2b1d2efdcc84,
     type: 3}
@@ -342,6 +344,8 @@ MonoBehaviour:
   _nutrientConsumption: 0.01
   _waterConsumption: 0.01
   _radius: 0
+  _isHealthy: 0
+  _sicknessThreshold: 33
 --- !u!114 &5082930126535322949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +391,83 @@ MonoBehaviour:
   FragranceInsects: {fileID: 8436508543876454960}
   FragranceWater: {fileID: 8436508543693966057}
   FragranceNutrient: {fileID: 8436508542981346318}
+--- !u!1 &2881418792661030974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6471991635917802049}
+  - component: {fileID: 1246088345906865984}
+  - component: {fileID: 8113587368352887017}
+  m_Layer: 0
+  m_Name: SendNutrientsText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &6471991635917802049
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881418792661030974}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4653738271104559133}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 121.4}
+  m_SizeDelta: {x: 320, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1246088345906865984
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881418792661030974}
+  m_CullTransparentMesh: 0
+--- !u!114 &8113587368352887017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2881418792661030974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: a046df883c080164986e1e3ad7c0f605, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Click to send nutrients
 --- !u!1 &4439964450215822702
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,9 +820,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 925de873bbdde5049ba5d04ce3080be3, type: 3}
---- !u!4 &8436508542961036857 stripped
+--- !u!4 &8436508542981346318 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5914963494275162338, guid: 925de873bbdde5049ba5d04ce3080be3,
+  m_CorrespondingSourceObject: {fileID: 5914963495906089685, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
@@ -769,9 +850,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8436508542981346318 stripped
+--- !u!4 &8436508542961036857 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5914963495906089685, guid: 925de873bbdde5049ba5d04ce3080be3,
+  m_CorrespondingSourceObject: {fileID: 5914963494275162338, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}

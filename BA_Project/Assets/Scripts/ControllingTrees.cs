@@ -44,6 +44,7 @@ public class ControllingTrees : MonoBehaviour
                 UnControlTree();
             }
             CheckMouseOverTree();
+            CheckNutrientSending();            
         }
         else
         {
@@ -133,6 +134,26 @@ public class ControllingTrees : MonoBehaviour
         else
         {
             UnfocusCurrentMouseOverTree();
+        }
+    }
+
+    private void CheckNutrientSending()
+    {
+        if (_currentMouseOverTree)
+        {
+            if (_controllableTree.controlledPlant.CanSendNutrientsTo(_currentMouseOverTree))
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    _controllableTree.controlledPlant.SendNutrientsTo(_currentMouseOverTree);
+                }
+
+                _currentMouseOverTree.SetSendNutrientsTextActive(true);
+            }
+            else
+            {
+                _currentMouseOverTree.SetSendNutrientsTextActive(false);
+            }
         }
     }
 

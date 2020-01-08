@@ -5,6 +5,8 @@ public class GameInitialization : MonoBehaviour
 {
     public static GameInitialization instance;
 
+    public Config config;
+
     public Level level;
     public UI ui;
     public PlayerCamera playerCamera;

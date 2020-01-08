@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using UniRx;
 using System.Collections.Generic;
 using System.Collections;
@@ -7,6 +8,7 @@ public class Plant : MonoBehaviour
 {
     public bool isGroupMaster = false;
     public PlantUI plantUI;
+    public Text plantUIText;
     public Transform connectionsHolder;
     public LineRenderer connectionPrefab;
 
@@ -122,6 +124,9 @@ public class Plant : MonoBehaviour
     private void UseUpEnergy(float amount)
     {
         _currentNutrients.Value -= amount;
+
+        if (_currentNutrients.Value <= 0f)
+            _currentNutrients.Value = 0f;
     }
 
     private void UseUpWater(float amount)
@@ -213,6 +218,9 @@ public class Plant : MonoBehaviour
 
     public virtual void SetUIActive(bool active) 
     {
+        if(!active)
+            SetSendNutrientsTextActive(false);
+
         plantUI.gameObject.SetActive(active);
     }
 
@@ -263,5 +271,21 @@ public class Plant : MonoBehaviour
     {
         _isHealthy = true;
 
+    }
+
+    public bool CanSendNutrientsTo(Plant otherTree)
+    {
+        return _isHealthy && !otherTree._isHealthy;
+    }
+
+    public void SendNutrientsTo(Plant otherTree)
+    {
+        _currentNutrients.Value -= GameInitialization.instance.config.sentNutrientsPerClick;
+        otherTree._currentNutrients.Value += GameInitialization.instance.config.sentNutrientsPerClick;
+    }
+
+    public void SetSendNutrientsTextActive(bool active)
+    {
+        plantUIText.gameObject.SetActive(active);
     }
 }
