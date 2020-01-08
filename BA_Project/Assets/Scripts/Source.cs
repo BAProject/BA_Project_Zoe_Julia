@@ -8,7 +8,7 @@ public class Source : MonoBehaviour
         Nutrient
     }
 
-    [SerializeField] private int _nutrients;
+    [SerializeField] private float _nutrients;
     [SerializeField] private SourceType _type;
     [SerializeField] private float _radius;
 
@@ -41,7 +41,7 @@ public class Source : MonoBehaviour
         }
     }
 
-    public int TryGetNutrients(int amount)
+    public float TryGetNutrients(float amount)
     {
         if (_nutrients >= amount)
         {
@@ -50,7 +50,7 @@ public class Source : MonoBehaviour
         }
         else
         {
-            int rest = _nutrients;
+            var rest = _nutrients;
             _nutrients = 0;
             return rest;
         }

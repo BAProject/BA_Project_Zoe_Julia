@@ -337,6 +337,10 @@ MonoBehaviour:
   connectionsHolder: {fileID: 5505818061723108916}
   connectionPrefab: {fileID: 865554358391886617, guid: 7dcf5bbe185857a4597a2b1d2efdcc84,
     type: 3}
+  _startingNutirents: 100
+  _startingWater: 100
+  _nutrientConsumption: 0.01
+  _waterConsumption: 0.01
   _radius: 0
 --- !u!114 &5082930126535322949
 MonoBehaviour:

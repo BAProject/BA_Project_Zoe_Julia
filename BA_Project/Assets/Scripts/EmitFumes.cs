@@ -32,7 +32,7 @@ public class EmitFumes : MonoBehaviour
 			Plant plantScript = GetComponent<Plant>();
 
 		//Call for help when Nutrient level is too low
-		if (plantScript._currentEnergy.Value < 50)
+		if (plantScript._currentNutrients.Value < 50)
 		{
 			FragranceNutrient.GetComponent<ParticleSystem>().enableEmission = true;
 

@@ -10,8 +10,14 @@ public class Plant : MonoBehaviour
     public Transform connectionsHolder;
     public LineRenderer connectionPrefab;
 
-    [SerializeField] public ReactiveProperty<int> _currentWater;
-    [SerializeField] public ReactiveProperty<int> _currentEnergy;
+    public float _startingNutirents;
+    public float _startingWater;
+
+    public ReactiveProperty<float> _currentWater;
+    public ReactiveProperty<float> _currentNutrients;
+
+    public float _nutrientConsumption;
+    public float _waterConsumption;
 
     private List<Source> _nutrientSources;
     private List<Source> _waterSources;
@@ -20,19 +26,17 @@ public class Plant : MonoBehaviour
 
     private PlantGroup plantGroup;
 
-    private const int maxEnergyWater = 1000;
-
     private void Awake()
     {
-        _currentEnergy = new ReactiveProperty<int>(maxEnergyWater);
-        _currentWater = new ReactiveProperty<int>(maxEnergyWater);
+        _currentNutrients = new ReactiveProperty<float>(_startingNutirents);
+        _currentWater = new ReactiveProperty<float>(_startingWater);
         _nutrientSources = new List<Source>();
         _waterSources = new List<Source>();
 
         //_currentEnergy.Subscribe(energy => Debug.Log("Energy changed to " + energy.ToString()));
         //_currentWater.Subscribe(water => Debug.Log("Water changed to " + water.ToString()));
 
-        _currentEnergy.Subscribe(_ => GetEnergyIfNeeded());
+        _currentNutrients.Subscribe(_ => GetEnergyIfNeeded());
         _currentWater.Subscribe(_ => GetWaterIfNeeded());
 
         GameInitialization.instance.level.RegisterPlant(this);
@@ -53,7 +57,8 @@ public class Plant : MonoBehaviour
 
     private void Update()
     {
-        UseUpEnergy(1);
+        UseUpEnergy(_nutrientConsumption);
+        UseUpWater(_waterConsumption);
         UpdateUI();
         //UseUpEnergy(20); // test
         //Debug.Log("elements in nutrient sources: " + _nutrientSources.Count);
@@ -110,19 +115,24 @@ public class Plant : MonoBehaviour
         set { _waterSources = value; }
     }
 
-    private void UseUpEnergy(int amount)
+    private void UseUpEnergy(float amount)
     {
-        _currentEnergy.Value -= amount;
+        _currentNutrients.Value -= amount;
+    }
+
+    private void UseUpWater(float amount)
+    {
+        _currentWater.Value -= amount;
     }
 
     private void GetEnergyIfNeeded()
     {
-        if (_currentEnergy.Value >= 100)
+        if (_currentNutrients.Value >= 100)
             return;
 
-        int totalMissingEnergy = 100 - _currentEnergy.Value;
-        int missingEnergy = totalMissingEnergy;
-        int nutrientsReturned = 0;
+        var totalMissingEnergy = 100 - _currentNutrients.Value;
+        var missingEnergy = totalMissingEnergy;
+        var nutrientsReturned = 0f;
 
         foreach (Source source in _nutrientSources)
         {
@@ -132,17 +142,17 @@ public class Plant : MonoBehaviour
             missingEnergy = totalMissingEnergy - nutrientsReturned;
         }
 
-        _currentEnergy.Value += nutrientsReturned;
+        _currentNutrients.Value += nutrientsReturned;
     }
 
     private void GetWaterIfNeeded()
     {
-        if (_currentEnergy.Value >= 100)
+        if (_currentWater.Value >= 100)
             return;
 
-        int totalMissingWater = 100 - _currentEnergy.Value;
-        int missingWater = totalMissingWater;
-        int waterReturned = 0;
+        var totalMissingWater = 100 - _currentWater.Value;
+        var missingWater = totalMissingWater;
+        var waterReturned = 0f;
 
         foreach (Source source in _waterSources)
         {
@@ -204,8 +214,8 @@ public class Plant : MonoBehaviour
 
     private void UpdateUI()
     {
-        plantUI.SetNutrientFill((float)_currentEnergy.Value / maxEnergyWater);
-        plantUI.SetWaterFill((float)_currentWater.Value / maxEnergyWater);
+        plantUI.SetNutrientFill((float)_currentNutrients.Value / _startingNutirents);
+        plantUI.SetWaterFill((float)_currentWater.Value / _startingWater);
     }
 
     public bool DoesPlantGroupContain(Plant plant)
