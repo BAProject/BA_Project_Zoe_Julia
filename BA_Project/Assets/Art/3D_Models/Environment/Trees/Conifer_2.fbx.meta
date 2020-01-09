@@ -6,16 +6,29 @@ ModelImporter:
     100000: //RootNode
     100002: Tree
     100004: Tree_Crown.001
+    100006: Tree.008
+    100008: Tree_Crown.008
     400000: //RootNode
     400002: Tree
     400004: Tree_Crown.001
+    400006: Tree.008
+    400008: Tree_Crown.008
     2100000: No Name
+    2100002: Outline
+    2100004: Tree_Stump_Conifer_2
+    2100006: Tree_Crown_Conifer_2
     2300000: Tree
     2300002: Tree_Crown.001
+    2300004: Tree.008
+    2300006: Tree_Crown.008
     3300000: Tree
     3300002: Tree_Crown.001
+    3300004: Tree.008
+    3300006: Tree_Crown.008
     4300000: Tree_Crown.001
     4300002: Tree
+    4300004: Tree_Crown.008
+    4300006: Tree.008
   externalObjects: {}
   materials:
     importMaterials: 1
