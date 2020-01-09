@@ -31,6 +31,9 @@ public class Plant : MonoBehaviour
     [SerializeField] bool _isHealthy;
     [SerializeField] float _sicknessThreshold;
 
+    [SerializeField] bool _isWatered;
+    [SerializeField] float _dryThreshold;
+
     private void Awake()
     {
         _currentNutrients = new ReactiveProperty<float>(_startingNutirents);
@@ -255,27 +258,25 @@ public class Plant : MonoBehaviour
 
     private void UpdateHealth()
     {
-        if (_currentNutrients.Value < _sicknessThreshold | _currentNutrients.Value < _sicknessThreshold)
-            MakeSick();
-        else
+        if (HasEnoughNutrients() && HasEnoughWater())            
             MakeHealthy();
+        else
+            MakeSick();
     }
 
     private void MakeSick()
     {
         _isHealthy = false;
-
     }
 
     private void MakeHealthy()
     {
         _isHealthy = true;
-
     }
 
     public bool CanSendNutrientsTo(Plant otherTree)
     {
-        return _isHealthy && !otherTree._isHealthy;
+        return HasEnoughNutrients() && !otherTree.HasEnoughNutrients();
     }
 
     public void SendNutrientsTo(Plant otherTree)
@@ -287,5 +288,15 @@ public class Plant : MonoBehaviour
     public void SetSendNutrientsTextActive(bool active)
     {
         plantUIText.gameObject.SetActive(active);
+    }
+
+    public bool HasEnoughNutrients()
+    {
+        return _currentNutrients.Value >= _sicknessThreshold;
+    }
+
+    public bool HasEnoughWater()
+    {
+        return _currentWater.Value >= _dryThreshold;
     }
 }
