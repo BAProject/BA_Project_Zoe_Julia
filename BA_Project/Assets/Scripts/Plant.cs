@@ -31,6 +31,10 @@ public class Plant : MonoBehaviour
     [SerializeField] bool _isHealthy;
     [SerializeField] float _sicknessThreshold;
 
+    public Material _materialHealthy;
+    public Material _materialSick;
+    public MeshRenderer _treeCrownRenderer;
+
     private void Awake()
     {
         _currentNutrients = new ReactiveProperty<float>(_startingNutirents);
@@ -255,22 +259,24 @@ public class Plant : MonoBehaviour
 
     private void UpdateHealth()
     {
-        if (_currentNutrients.Value < _sicknessThreshold | _currentNutrients.Value < _sicknessThreshold)
+        if (_isHealthy && 
+            (_currentNutrients.Value < _sicknessThreshold | _currentNutrients.Value < _sicknessThreshold))
             MakeSick();
-        else
+        if (!_isHealthy &&
+            (_currentNutrients.Value >= _sicknessThreshold | _currentNutrients.Value >= _sicknessThreshold))
             MakeHealthy();
     }
 
     private void MakeSick()
     {
         _isHealthy = false;
-
+        _treeCrownRenderer.material = _materialSick;
     }
 
     private void MakeHealthy()
     {
         _isHealthy = true;
-
+        _treeCrownRenderer.material = _materialHealthy;
     }
 
     public bool CanSendNutrientsTo(Plant otherTree)
