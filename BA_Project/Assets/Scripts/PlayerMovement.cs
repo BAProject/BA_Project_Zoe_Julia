@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform characterGfxTransform;
 
+    public Animator Player_Idle_Run;
+
     private void Awake()
     {
         if (!cam)
@@ -30,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     {
         _body = GetComponent<Rigidbody>();
         _groundChecker = transform.GetChild(0);
+
+        //Player_Idle_Run = GetComponent<Animator>();
     }
 
     void Update()
@@ -42,6 +46,24 @@ public class PlayerMovement : MonoBehaviour
         //_inputs = cam.TransformDirection(_inputs).normalized;
         _inputs.y = _body.velocity.y;
         _body.velocity = _inputs * speed;
+
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            //Play run animation
+            Player_Idle_Run.Play("Run");
+        }
+        else if (Input.GetAxis("Vertical") != 0)
+        {
+            //Play run animation
+            Player_Idle_Run.Play("Run");
+        }
+        //If the player is moving vertically (forward and backward) or diagonally
+
+        else
+        {
+            //stop animation
+            Player_Idle_Run.Play("Stop");
+        }
 
         if (Input.GetButtonDown("Jump") && _isGrounded)
         {

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d52a2080f4e4eaf43a32d45975e6f825
+guid: 6c636739e92abff4aa5f706689e4236c
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -90,7 +90,7 @@ ModelImporter:
     4300006: Group47403
     4300008: Group31603
     4300010: Group15802
-    7400000: Running
+    7400000: Run Forward
     9500000: //RootNode
     13700000: Group13464
     13700002: Group15802
@@ -128,10 +128,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Running
+      name: Run Forward
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 17
+      lastFrame: 21
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
