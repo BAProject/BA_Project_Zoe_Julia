@@ -7,8 +7,6 @@ using System.Collections;
 public class Plant : MonoBehaviour
 {
     public bool isGroupMaster = false;
-    public PlantUI plantUI;
-    public Text plantUIText;
     public Transform connectionsHolder;
     public LineRenderer connectionPrefab;
 
@@ -78,7 +76,6 @@ public class Plant : MonoBehaviour
     {
         UseUpEnergy(_nutrientConsumption);
         UseUpWater(_waterConsumption);
-        UpdateUI();
 
         //if(Input.GetKeyDown(KeyCode.G))
         //{
@@ -223,22 +220,17 @@ public class Plant : MonoBehaviour
 
     public virtual void SetPlantControlled(bool controlled) 
     {
-        SetUIActive(controlled);
         connectionsHolder.gameObject.SetActive(controlled);
     }
 
-    public virtual void SetUIActive(bool active) 
+    public float GetNutrientFill()
     {
-        if(!active)
-            SetSendNutrientsTextActive(false);
-
-        plantUI.gameObject.SetActive(active);
+        return (float)_currentNutrients.Value / _startingNutirents;
     }
 
-    private void UpdateUI()
+    public float GetWaterFill()
     {
-        plantUI.SetNutrientFill((float)_currentNutrients.Value / _startingNutirents);
-        plantUI.SetWaterFill((float)_currentWater.Value / _startingWater);
+        return (float)_currentWater.Value / _startingWater;
     }
 
     public bool DoesPlantGroupContain(Plant plant)
@@ -293,11 +285,6 @@ public class Plant : MonoBehaviour
     {
         _currentNutrients.Value -= GameInitialization.instance.config.sentNutrientsPerClick;
         otherTree._currentNutrients.Value += GameInitialization.instance.config.sentNutrientsPerClick;
-    }
-
-    public void SetSendNutrientsTextActive(bool active)
-    {
-        plantUIText.gameObject.SetActive(active);
     }
 
     public bool HasEnoughNutrients()

@@ -15,6 +15,8 @@ public class ControllingTrees : MonoBehaviour
     private bool _isControlling;
     private bool _isInTreeRange;
 
+    private UI ui;
+
     private void Awake()
     {
         _isControlling = false;
@@ -23,6 +25,8 @@ public class ControllingTrees : MonoBehaviour
 
         if (!_mainCam)
             _mainCam = Camera.main;
+
+        ui = GameInitialization.instance.ui;
     }
 
     public void DisableMovement()
@@ -44,10 +48,18 @@ public class ControllingTrees : MonoBehaviour
                 UnControlTree();
             }
             CheckMouseOverTree();
-            CheckNutrientSending();            
+            CheckNutrientSending();
+
+            ui.SetControlledTreeActive(true);
+            ui.SetControlledTreeValues(_controllableTree.controlledPlant);
+
+            if (_currentMouseOverTree)
+                ui.SetMouseOverTreeValues(_currentMouseOverTree);
         }
         else
         {
+            ui.SetControlledTreeActive(false);
+
             ScanRadiusForControllable();
 
             if (_controllableTree)
@@ -121,9 +133,9 @@ public class ControllingTrees : MonoBehaviour
                 {
                     if (tree != _currentMouseOverTree)
                         UnfocusCurrentMouseOverTree();
-
-                    tree.SetUIActive(true);
+                                    
                     _currentMouseOverTree = tree;
+                    ui.SetMouseOverTreeActive(true);
                 }                
             }
             else
@@ -148,11 +160,11 @@ public class ControllingTrees : MonoBehaviour
                     _controllableTree.controlledPlant.SendNutrientsTo(_currentMouseOverTree);
                 }
 
-                _currentMouseOverTree.SetSendNutrientsTextActive(true);
+                ui.SetSendNutrientsTextActive(true);
             }
             else
             {
-                _currentMouseOverTree.SetSendNutrientsTextActive(false);
+                ui.SetSendNutrientsTextActive(false);
             }
         }
     }
@@ -161,7 +173,8 @@ public class ControllingTrees : MonoBehaviour
     {
         if (_currentMouseOverTree)
         {
-            _currentMouseOverTree.SetUIActive(false);
+            ui.SetMouseOverTreeActive(false);
+            ui.SetSendNutrientsTextActive(false);
             _currentMouseOverTree = null;
         }
     }
