@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -40,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         _inputs = Vector3.zero;
         _inputs.x = Input.GetAxis("Horizontal");
         _inputs.z = Input.GetAxis("Vertical");
-        _inputs = cam.TransformDirection(_inputs).normalized;
+        //_inputs = cam.TransformDirection(_inputs).normalized;
         _inputs.y = _body.velocity.y;
         _body.velocity = _inputs * speed;
 
