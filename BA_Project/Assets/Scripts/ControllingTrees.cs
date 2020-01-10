@@ -8,6 +8,7 @@ public class ControllingTrees : MonoBehaviour
     [SerializeField] private KeyCode _controlKey;
     [SerializeField] private float _treeSearchRadius;
     [SerializeField] private PlayerMovement _characterController;
+    [SerializeField] private GameObject _avatar;
 
     private Controllable _controllableTree;
     private List<Controllable> _treesInRange;
@@ -222,6 +223,7 @@ public class ControllingTrees : MonoBehaviour
         DisableMovement();
         _controllableTree.ControlTree();
         GameInitialization.instance.playerCamera.SetOrbitTarget(_controllableTree.controlPivot.gameObject);
+        _avatar.SetActive(false);
 
         _mainCam.GetComponent<CameraController>().target = _controllableTree.controlPivot.gameObject.transform;
     }
@@ -233,6 +235,7 @@ public class ControllingTrees : MonoBehaviour
         EnableMovement();
         _isControlling = false;
         GameInitialization.instance.playerCamera.SetOrbitTarget(gameObject);
+        _avatar.SetActive(true);
 
         _mainCam.GetComponent<CameraController>().target = transform;
     }
