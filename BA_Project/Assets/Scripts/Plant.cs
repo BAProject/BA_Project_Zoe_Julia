@@ -31,6 +31,7 @@ public class Plant : MonoBehaviour
     [SerializeField] bool _isHealthy;
     [SerializeField] float _sicknessThreshold;
 
+    public bool _displayHealth;
     public Material _materialHealthy;
     public Material _materialSick;
     public MeshRenderer _treeCrownRenderer;
@@ -51,8 +52,11 @@ public class Plant : MonoBehaviour
         _currentNutrients.Subscribe(_ => GetEnergyIfNeeded());
         _currentWater.Subscribe(_ => GetWaterIfNeeded());
 
-        _currentNutrients.Subscribe(_ => UpdateHealth());
-        _currentWater.Subscribe(_ => UpdateHealth());
+        if (_displayHealth)
+        {
+            _currentNutrients.Subscribe(_ => UpdateHealth());
+            _currentWater.Subscribe(_ => UpdateHealth());
+        }
 
         GameInitialization.instance.level.RegisterPlant(this);
     }
