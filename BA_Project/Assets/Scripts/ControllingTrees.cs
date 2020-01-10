@@ -209,6 +209,8 @@ public class ControllingTrees : MonoBehaviour
         DisableMovement();
         _controllableTree.ControlTree();
         GameInitialization.instance.playerCamera.SetOrbitTarget(_controllableTree.controlPivot.gameObject);
+
+        _mainCam.GetComponent<CameraController>().target = _controllableTree.controlPivot.gameObject.transform;
     }
 
     private void UnControlTree()
@@ -218,6 +220,8 @@ public class ControllingTrees : MonoBehaviour
         EnableMovement();
         _isControlling = false;
         GameInitialization.instance.playerCamera.SetOrbitTarget(gameObject);
+
+        _mainCam.GetComponent<CameraController>().target = transform;
     }
 
     private void OnDrawGizmos()
