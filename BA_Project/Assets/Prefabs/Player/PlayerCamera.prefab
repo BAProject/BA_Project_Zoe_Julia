@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3653446652796748576}
   - component: {fileID: 3653446652796748579}
   - component: {fileID: 3653446652796748575}
-  - component: {fileID: 3653446652796748574}
+  - component: {fileID: 3817915974630457425}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: MainCamera
@@ -113,7 +113,7 @@ MonoBehaviour:
     _json: '{"declarations":{"collection":{"$content":[{"name":"OrbitTarget","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 0}
---- !u!114 &3653446652796748574
+--- !u!114 &3817915974630457425
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,10 +122,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 3653446652796748578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Script: {fileID: 11500000, guid: 57a3f7dbe8884364998bc70a5d86c813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 982caa1bd6aed514fb7765f7f2f29935, type: 2}
+  target: {fileID: 0}
+  targetOffset: {x: 0, y: 0, z: 0}
+  distance: 5
+  xSpeed: 10
+  ySpeed: 5
+  yMinLimit: -20
+  yMaxLimit: 80
+  distanceMin: 0.5
+  distanceMax: 20
+  xOffset: 0
+  yOffset: 0
+  topdownOffsetY: 13
+  topdownOffsetX: 0
+  topdownOffsetZ: -10
+  topdownInitRotationX: 45

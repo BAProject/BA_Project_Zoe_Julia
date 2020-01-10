@@ -47,22 +47,16 @@ public class PlayerMovement : MonoBehaviour
         _inputs.y = _body.velocity.y;
         _body.velocity = _inputs * speed;
 
-        if (Input.GetAxis("Horizontal") != 0)
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
         {
             //Play run animation
             Player_Idle_Run.Play("Run");
         }
-        else if (Input.GetAxis("Vertical") != 0)
-        {
-            //Play run animation
-            Player_Idle_Run.Play("Run");
-        }
-        //If the player is moving vertically (forward and backward) or diagonally
 
         else
         {
             //stop animation
-            Player_Idle_Run.Play("Stop");
+            Player_Idle_Run.Play("Idle");
         }
 
         if (Input.GetButtonDown("Jump") && _isGrounded)
