@@ -126,6 +126,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   characterGfxTransform: {fileID: 2822478777157990407}
+  Player_Idle_Run: {fileID: 2822478777148397543}
 --- !u!114 &1300332791377443914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,7 +293,7 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 8afac0df086b62142bd1e5b359ee943d, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: eda86f385a7c7f64fb092ad70ed3afbb, type: 2}
+      objectReference: {fileID: 9100000, guid: 1a3bcd6923a2e0c459f598eff5c02f32, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8afac0df086b62142bd1e5b359ee943d, type: 3}
 --- !u!1 &2822478777157887015 stripped
@@ -304,6 +305,12 @@ GameObject:
 --- !u!4 &2822478777157990407 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8afac0df086b62142bd1e5b359ee943d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2822478777157853831}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2822478777148397543 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 8afac0df086b62142bd1e5b359ee943d,
     type: 3}
   m_PrefabInstance: {fileID: 2822478777157853831}
   m_PrefabAsset: {fileID: 0}
