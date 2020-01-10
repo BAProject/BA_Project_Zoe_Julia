@@ -2,74 +2,33 @@
 using System.Collections;
 using System.Collections.Generic;
 
-
 public class EmitFumes : MonoBehaviour
 {
+    public Plant plant;
 
-	public Transform FragranceAllGood;
-	public Transform FragranceRain;
-	public Transform FragranceInsects;
-	public Transform FragranceWater;
-	public Transform FragranceNutrient;
+	public ParticleSystem FragranceAllGood;
+	public ParticleSystem FragranceRain;
+	public ParticleSystem FragranceInsects;
+	public ParticleSystem FragranceWater;
+	public ParticleSystem FragranceNutrient;
 
 	// Start is called before the first frame update
 	void Start()
     {
-		FragranceAllGood.GetComponent<ParticleSystem> ().enableEmission = true;
+		FragranceAllGood.enableEmission = true;
 
-		FragranceRain.GetComponent<ParticleSystem> ().enableEmission = false;
-		FragranceInsects.GetComponent<ParticleSystem> ().enableEmission = false;
-		FragranceWater.GetComponent<ParticleSystem> ().enableEmission = false;
-		FragranceNutrient.GetComponent<ParticleSystem> ().enableEmission = false;
-		FragranceInsects.GetComponent<ParticleSystem> ().enableEmission = false;
-
-
+		FragranceRain.enableEmission = false;
+		FragranceInsects.enableEmission = false;
+		FragranceWater.enableEmission = false;
+		FragranceNutrient.enableEmission = false;
+		FragranceInsects.enableEmission = false;
 	}
 
     // Update is called once per frame
     void Update()
     {
-			Plant plantScript = GetComponent<Plant>();
-
-		//Call for help when Nutrient level is too low
-		if (plantScript._currentNutrients.Value > 50 && plantScript._currentWater.Value > 50)
-		{
-			FragranceAllGood.GetComponent<ParticleSystem>().enableEmission = true;
-		}
-		
-		if (plantScript._currentNutrients.Value < 50)
-		{
-			FragranceNutrient.GetComponent<ParticleSystem>().enableEmission = true;
-
-			FragranceRain.GetComponent<ParticleSystem>().enableEmission = false;
-			FragranceInsects.GetComponent<ParticleSystem>().enableEmission = false;
-			FragranceWater.GetComponent<ParticleSystem>().enableEmission = false;
-			FragranceAllGood.GetComponent<ParticleSystem>().enableEmission = false;
-			FragranceInsects.GetComponent<ParticleSystem>().enableEmission = false;
-		}
-
-		else 
-		{
-			FragranceNutrient.GetComponent<ParticleSystem>().enableEmission = false;
-		}
-
-
-		//Call for help when Water level is too low
-		if (plantScript._currentWater.Value < 50)
-		{
-			FragranceRain.GetComponent<ParticleSystem>().enableEmission = true;
-
-			FragranceNutrient.GetComponent<ParticleSystem>().enableEmission = false;
-			FragranceInsects.GetComponent<ParticleSystem>().enableEmission = false;
-			FragranceWater.GetComponent<ParticleSystem>().enableEmission = false;
-			FragranceAllGood.GetComponent<ParticleSystem>().enableEmission = false;
-			FragranceInsects.GetComponent<ParticleSystem>().enableEmission = false;
-		}
-
-		else
-		{
-			FragranceRain.GetComponent<ParticleSystem>().enableEmission = false;
-		}
-
+        FragranceAllGood.enableEmission = plant.HasEnoughNutrients() && plant.HasEnoughWater();
+        FragranceNutrient.enableEmission = !plant.HasEnoughNutrients();
+        FragranceWater.enableEmission = !plant.HasEnoughWater();
     }
 }

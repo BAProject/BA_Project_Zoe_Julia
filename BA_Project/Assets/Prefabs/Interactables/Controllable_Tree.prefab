@@ -346,6 +346,8 @@ MonoBehaviour:
   _radius: 0
   _isHealthy: 0
   _sicknessThreshold: 33
+  _isWatered: 0
+  _dryThreshold: 0
 --- !u!114 &5082930126535322949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,11 +388,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa1a819ca5a584499ca435223f9cbfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FragranceAllGood: {fileID: 8436508543167417988}
-  FragranceRain: {fileID: 8436508543583462652}
-  FragranceInsects: {fileID: 8436508543876454960}
-  FragranceWater: {fileID: 8436508543693966057}
-  FragranceNutrient: {fileID: 8436508542981346318}
+  plant: {fileID: 8683576879459197480}
+  FragranceAllGood: {fileID: 8436508543167417991}
+  FragranceRain: {fileID: 8436508543583462655}
+  FragranceInsects: {fileID: 8436508543876454963}
+  FragranceWater: {fileID: 8436508543693966056}
+  FragranceNutrient: {fileID: 8436508542981346313}
 --- !u!1 &2881418792661030974
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,33 +823,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 925de873bbdde5049ba5d04ce3080be3, type: 3}
---- !u!4 &8436508542981346318 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5914963495906089685, guid: 925de873bbdde5049ba5d04ce3080be3,
+--- !u!198 &8436508542981346313 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5914963495906089682, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8436508543693966057 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5914963495547061298, guid: 925de873bbdde5049ba5d04ce3080be3,
+--- !u!198 &8436508543693966056 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5914963495547061299, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8436508543876454960 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5914963495192679659, guid: 925de873bbdde5049ba5d04ce3080be3,
+--- !u!198 &8436508543876454963 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5914963495192679656, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8436508543583462652 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5914963495434463783, guid: 925de873bbdde5049ba5d04ce3080be3,
+--- !u!198 &8436508543583462655 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5914963495434463780, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &8436508543167417988 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5914963496094384223, guid: 925de873bbdde5049ba5d04ce3080be3,
+--- !u!198 &8436508543167417991 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5914963496094384220, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
