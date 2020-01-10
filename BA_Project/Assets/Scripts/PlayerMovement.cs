@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     private bool _isGrounded = true;
     private Transform _groundChecker;
 
+    public Transform characterGfxTransform;
+
     private void Awake()
     {
         if (!cam)
@@ -46,6 +48,11 @@ public class PlayerMovement : MonoBehaviour
         {
             _body.AddForce(Vector3.up * Mathf.Sqrt(jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
         }
+
+        //ROTATE CHARACTER GFX TO MOVEDIRECTION
+        Vector3 moveDirectionToLook = new Vector3((_inputs).normalized.x, 0, (_inputs).normalized.z);
+        Vector3 lookingDirection = Vector3.RotateTowards(characterGfxTransform.forward, moveDirectionToLook, 8 * Time.deltaTime, 0.0F);
+        characterGfxTransform.rotation = Quaternion.LookRotation(lookingDirection);
     }
 
     public void SetEnabled(bool isEnabled)
