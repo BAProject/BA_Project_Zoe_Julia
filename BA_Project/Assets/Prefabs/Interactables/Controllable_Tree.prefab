@@ -95,6 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGroupMaster: 0
+  canMakeRain: 0
+  isCurrentlyRainedUpon: 0
   connectionsHolder: {fileID: 5505818061723108916}
   connectionPrefab: {fileID: 865554358391886617, guid: 7dcf5bbe185857a4597a2b1d2efdcc84,
     type: 3}
@@ -107,7 +109,7 @@ MonoBehaviour:
   _sicknessThreshold: 33
   _displayHealth: 0
   _materialHealthy: {fileID: 2100000, guid: a08ba183a06ad1141868bb1857e544e4, type: 2}
-  _materialSick: {fileID: 0}
+  _materialSick: {fileID: 2100000, guid: 1c9fa9c13d0dd194dab1fcfa46a95afa, type: 2}
   _treeCrownRenderer: {fileID: 0}
   _isWatered: 0
   _dryThreshold: 0
