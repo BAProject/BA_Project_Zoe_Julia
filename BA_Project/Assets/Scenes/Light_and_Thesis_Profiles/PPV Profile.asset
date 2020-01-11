@@ -55,8 +55,8 @@ MonoBehaviour:
     overrideState: 0
     value: -12
   thicknessModifier:
-    overrideState: 0
-    value: 1
+    overrideState: 1
+    value: 6
   directLightingStrength:
     overrideState: 0
     value: 0
@@ -163,10 +163,10 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: 30
+    value: 55
   tint:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 68
   colorFilter:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -1439,13 +1439,13 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 4
+    value: 1.5
   threshold:
     overrideState: 0
-    value: 1
+    value: 0.52
   softKnee:
-    overrideState: 0
-    value: 0.5
+    overrideState: 1
+    value: 1
   clamp:
     overrideState: 0
     value: 65472
