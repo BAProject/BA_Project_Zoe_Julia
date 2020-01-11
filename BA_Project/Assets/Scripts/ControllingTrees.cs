@@ -47,6 +47,7 @@ public class ControllingTrees : MonoBehaviour
             if (Input.GetKeyDown(_controlKey))
             {
                 UnControlTree();
+                return;
             }
             CheckMouseOverTree();
             CheckNutrientSending();
@@ -60,6 +61,7 @@ public class ControllingTrees : MonoBehaviour
         else
         {
             ui.SetControlledTreeActive(false);
+            ui.SetMouseOverTreeActive(false);
 
             ScanRadiusForControllable();
 
@@ -137,6 +139,7 @@ public class ControllingTrees : MonoBehaviour
                                     
                     _currentMouseOverTree = tree;
                     ui.SetMouseOverTreeActive(true);
+                    _currentMouseOverTree.SetOutlineActive(true);
                 }                
             }
             else
@@ -174,6 +177,7 @@ public class ControllingTrees : MonoBehaviour
     {
         if (_currentMouseOverTree)
         {
+            _currentMouseOverTree.SetOutlineActive(false);
             ui.SetMouseOverTreeActive(false);
             ui.SetSendNutrientsTextActive(false);
             _currentMouseOverTree = null;
@@ -231,6 +235,9 @@ public class ControllingTrees : MonoBehaviour
     private void UnControlTree()
     {
         Debug.Log("Un-Controlling Tree");
+        if (_currentMouseOverTree)
+            _currentMouseOverTree.SetOutlineActive(false);
+
         _controllableTree.UnControlTree();
         EnableMovement();
         _isControlling = false;

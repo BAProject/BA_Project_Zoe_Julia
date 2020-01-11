@@ -37,6 +37,9 @@ public class Plant : MonoBehaviour
     [SerializeField] bool _isWatered;
     [SerializeField] float _dryThreshold;
 
+    private List<MeshRenderer> outlines = new List<MeshRenderer>();
+    private const string OutlineString = "Outline";
+
     private void Awake()
     {
         _currentNutrients = new ReactiveProperty<float>(_startingNutirents);
@@ -55,6 +58,8 @@ public class Plant : MonoBehaviour
             _currentNutrients.Subscribe(_ => UpdateHealth());
             _currentWater.Subscribe(_ => UpdateHealth());
         }
+
+        FindOutlineObjects();
 
         GameInitialization.instance.level.RegisterPlant(this);
     }
@@ -84,6 +89,23 @@ public class Plant : MonoBehaviour
         //        CreateAndEmitSignal(Signal.SignalType.Fume);
         //    }
         //}
+    }
+
+    private void FindOutlineObjects()
+    {
+        MeshRenderer[] allChildMeshRenderes = GetComponentsInChildren<MeshRenderer>(true);
+
+        foreach(MeshRenderer meshRenderer in allChildMeshRenderes)
+        {
+            if (meshRenderer.gameObject.name.Contains(OutlineString))
+                outlines.Add(meshRenderer);
+        }
+    }
+
+    public void SetOutlineActive(bool active)
+    {
+        foreach (MeshRenderer outline in outlines)
+            outline.gameObject.SetActive(active);
     }
 
     private void InitializeGroup()
@@ -220,6 +242,7 @@ public class Plant : MonoBehaviour
 
     public virtual void SetPlantControlled(bool controlled) 
     {
+        SetOutlineActive(controlled);
         connectionsHolder.gameObject.SetActive(controlled);
     }
 
