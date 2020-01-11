@@ -575,19 +575,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!65 &5953087885886721773
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8064969472647853294}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.010000002, y: 0.053357758, z: 0.13258009}
-  m_Center: {x: 0, y: 0.0042048628, z: -0.051937297}
 --- !u!136 &4224639012673194519
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -602,22 +589,19 @@ CapsuleCollider:
   m_Height: 0.09977751
   m_Direction: 1
   m_Center: {x: 0, y: 0.014152435, z: -0.030410234}
---- !u!114 &4064592786407831196
-MonoBehaviour:
+--- !u!65 &5953087885886721773
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8064969472647853294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"InteractButton","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
-    _objectReferences:
-    - {fileID: 2783876491018758789}
+  serializedVersion: 2
+  m_Size: {x: 0.010000002, y: 0.053357758, z: 0.13258009}
+  m_Center: {x: 0, y: 0.0042048628, z: -0.051937297}
 --- !u!114 &1990443770428632902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,6 +618,23 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: 71ce90e9cfff12e4eab6b3051a144687, type: 2}
+--- !u!114 &4064592786407831196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8064969472647853294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"InteractButton","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"FactUI","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 2783876491018758789}
+    - {fileID: 8871891770272014324}
 --- !u!1 &8871891770272014324
 GameObject:
   m_ObjectHideFlags: 0
