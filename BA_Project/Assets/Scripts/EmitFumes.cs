@@ -6,29 +6,37 @@ public class EmitFumes : MonoBehaviour
 {
     public Plant plant;
 
-	public ParticleSystem FragranceAllGood;
-	public ParticleSystem FragranceRain;
-	public ParticleSystem FragranceInsects;
-	public ParticleSystem FragranceWater;
-	public ParticleSystem FragranceNutrient;
+	public ParticleSystem[] FragrancesAllGood;
+	public ParticleSystem[] FragrancesRain;
+	public ParticleSystem[] FragrancesInsects;
+	public ParticleSystem[] FragrancesWater;
+	public ParticleSystem[] FragrancesNutrient;
 
 	// Start is called before the first frame update
 	void Start()
     {
-		FragranceAllGood.enableEmission = true;
+        SetParticlesSystemsEmissionEnabled(FragrancesAllGood, true);
 
-		FragranceRain.enableEmission = false;
-		FragranceInsects.enableEmission = false;
-		FragranceWater.enableEmission = false;
-		FragranceNutrient.enableEmission = false;
-		FragranceInsects.enableEmission = false;
-	}
+        SetParticlesSystemsEmissionEnabled(FragrancesRain, false);
+        SetParticlesSystemsEmissionEnabled(FragrancesInsects, false);
+        SetParticlesSystemsEmissionEnabled(FragrancesWater, false);
+        SetParticlesSystemsEmissionEnabled(FragrancesNutrient, false);
+    }
 
     // Update is called once per frame
     void Update()
     {
-        FragranceAllGood.enableEmission = plant.HasEnoughNutrients() && plant.HasEnoughWater();
-        FragranceNutrient.enableEmission = !plant.HasEnoughNutrients();
-        FragranceWater.enableEmission = !plant.HasEnoughWater();
+        SetParticlesSystemsEmissionEnabled(FragrancesAllGood, plant.HasEnoughNutrients() && plant.HasEnoughWater());
+
+        SetParticlesSystemsEmissionEnabled(FragrancesNutrient, !plant.HasEnoughNutrients());
+        SetParticlesSystemsEmissionEnabled(FragrancesWater, !plant.HasEnoughWater());
+    }
+
+    private void SetParticlesSystemsEmissionEnabled(ParticleSystem[] particles, bool enabled)
+    {
+        foreach(ParticleSystem particle in particles)
+        {
+            particle.enableEmission = enabled;
+        }
     }
 }

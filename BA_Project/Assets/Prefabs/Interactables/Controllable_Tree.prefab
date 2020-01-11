@@ -95,8 +95,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGroupMaster: 0
-  plantUI: {fileID: 0}
-  plantUIText: {fileID: 0}
   connectionsHolder: {fileID: 5505818061723108916}
   connectionPrefab: {fileID: 865554358391886617, guid: 7dcf5bbe185857a4597a2b1d2efdcc84,
     type: 3}
@@ -154,11 +152,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plant: {fileID: 8683576879459197480}
-  FragranceAllGood: {fileID: 8436508543167417991}
-  FragranceRain: {fileID: 8436508543583462655}
-  FragranceInsects: {fileID: 8436508543876454963}
-  FragranceWater: {fileID: 8436508543693966056}
-  FragranceNutrient: {fileID: 8436508542981346313}
+  FragrancesAllGood:
+  - {fileID: 8436508543167417991}
+  - {fileID: 5342292098417599923}
+  FragrancesRain:
+  - {fileID: 8436508543583462655}
+  - {fileID: 3446597243274174843}
+  FragrancesInsects:
+  - {fileID: 8436508543876454963}
+  - {fileID: 4195321121477370419}
+  FragrancesWater:
+  - {fileID: 8436508543693966056}
+  - {fileID: 2679557813863641363}
+  FragrancesNutrient:
+  - {fileID: 8436508542981346313}
+  - {fileID: 7286512601237032625}
 --- !u!1 &8497506534074817009
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,9 +278,21 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &7286512601237032625 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4763876832723665002, guid: 925de873bbdde5049ba5d04ce3080be3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2810901646866976475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &8436508543693966056 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5914963495547061299, guid: 925de873bbdde5049ba5d04ce3080be3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2810901646866976475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2679557813863641363 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 157036121290178504, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
@@ -282,15 +302,33 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &4195321121477370419 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2106156797232098536, guid: 925de873bbdde5049ba5d04ce3080be3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2810901646866976475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &8436508543583462655 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5914963495434463780, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &3446597243274174843 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 636856690349944736, guid: 925de873bbdde5049ba5d04ce3080be3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2810901646866976475}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &8436508543167417991 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5914963496094384220, guid: 925de873bbdde5049ba5d04ce3080be3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2810901646866976475}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5342292098417599923 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7863837438624377704, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
