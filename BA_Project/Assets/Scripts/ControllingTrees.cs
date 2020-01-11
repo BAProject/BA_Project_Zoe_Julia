@@ -51,6 +51,7 @@ public class ControllingTrees : MonoBehaviour
             }
             CheckMouseOverTree();
             CheckNutrientSending();
+            CheckMakingRain();
 
             ui.SetControlledTreeActive(true);
             ui.SetControlledTreeValues(_controllableTree.controlledPlant);
@@ -169,6 +170,17 @@ public class ControllingTrees : MonoBehaviour
             else
             {
                 ui.SetSendNutrientsTextActive(false);
+            }
+        }
+    }
+
+    private void CheckMakingRain()
+    {
+        if(_controllableTree.controlledPlant.CanCurrentlyMakeRain())
+        {
+            if(Input.GetMouseButtonDown(1))
+            {
+                _controllableTree.controlledPlant.MakeRain();
             }
         }
     }

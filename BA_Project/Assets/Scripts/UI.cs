@@ -13,6 +13,7 @@ public class UI : MonoBehaviour
     public PlantUI controlledTreePlantUI;
     public PlantUI mouseOverTreePlantUI;
     public Text sendNutrientsText;
+    public GameObject rainUI;
 
     private bool mouseOverTreeActive = false;
 
@@ -77,5 +78,10 @@ public class UI : MonoBehaviour
     public void SetSendNutrientsTextActive(bool active)
     {
         sendNutrientsText.gameObject.SetActive(active);
+    }
+
+    public void SetRainUIActive(bool active)
+    {
+        rainUI.SetActive(active);
     }
 }

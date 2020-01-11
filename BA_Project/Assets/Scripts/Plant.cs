@@ -7,6 +7,8 @@ using System.Collections;
 public class Plant : MonoBehaviour
 {
     public bool isGroupMaster = false;
+    public bool canMakeRain = false;
+    public bool isCurrentlyRainedUpon = false;
     public Transform connectionsHolder;
     public LineRenderer connectionPrefab;
 
@@ -39,6 +41,9 @@ public class Plant : MonoBehaviour
 
     private List<MeshRenderer> outlines = new List<MeshRenderer>();
     private const string OutlineString = "Outline";
+
+    private bool currentlyMakingRain = false;
+    private bool isControlled = false;
 
     private void Awake()
     {
@@ -81,6 +86,14 @@ public class Plant : MonoBehaviour
     {
         UseUpEnergy(_nutrientConsumption);
         UseUpWater(_waterConsumption);
+
+        if(isCurrentlyRainedUpon)
+        {
+            _currentWater.Value += GameInitialization.instance.config.rainWaterPerSecond * Time.deltaTime;
+
+            if (_currentWater.Value > _startingWater)
+                _currentWater.Value = _startingWater;
+        }
 
         //if(Input.GetKeyDown(KeyCode.G))
         //{
@@ -244,6 +257,10 @@ public class Plant : MonoBehaviour
     {
         SetOutlineActive(controlled);
         connectionsHolder.gameObject.SetActive(controlled);
+        isControlled = controlled;
+
+        if (canMakeRain && !currentlyMakingRain)
+            GameInitialization.instance.ui.SetRainUIActive(controlled);
     }
 
     public float GetNutrientFill()
@@ -318,5 +335,44 @@ public class Plant : MonoBehaviour
     public bool HasEnoughWater()
     {
         return _currentWater.Value >= _dryThreshold;
+    }
+
+    public bool CanCurrentlyMakeRain()
+    {
+        return canMakeRain && !currentlyMakingRain;
+    }
+
+    public void MakeRain()
+    {
+        Debug.Log("make rain!");
+        StartCoroutine(RainingSequence());
+    }
+
+    public void SetRainActive(bool active)
+    {
+        isCurrentlyRainedUpon = active;
+    }
+
+    private IEnumerator RainingSequence()
+    {
+        currentlyMakingRain = true;
+        GameInitialization.instance.ui.SetRainUIActive(false);
+
+        foreach(Plant plant in plantGroup.plants)
+        {
+            plant.SetRainActive(true);
+        }
+
+        yield return new WaitForSeconds(GameInitialization.instance.config.rainDuration);
+
+        foreach (Plant plant in plantGroup.plants)
+        {
+            plant.SetRainActive(false);
+        }
+
+        if (isControlled)
+            GameInitialization.instance.ui.SetRainUIActive(true);
+
+        currentlyMakingRain = false;
     }
 }

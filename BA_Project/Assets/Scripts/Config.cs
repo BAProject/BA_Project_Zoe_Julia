@@ -7,4 +7,6 @@ public class Config : ScriptableObject
 {
     public float sentNutrientsPerClick = 10f;
     public float sentWaterPerClick = 10f;
+    public float rainDuration = 5f;
+    public float rainWaterPerSecond = 10f;
 }

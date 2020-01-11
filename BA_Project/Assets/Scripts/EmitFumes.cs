@@ -30,6 +30,7 @@ public class EmitFumes : MonoBehaviour
 
         SetParticlesSystemsEmissionEnabled(FragrancesNutrient, !plant.HasEnoughNutrients());
         SetParticlesSystemsEmissionEnabled(FragrancesWater, !plant.HasEnoughWater());
+        SetParticlesSystemsEmissionEnabled(FragrancesRain, plant.isCurrentlyRainedUpon);
     }
 
     private void SetParticlesSystemsEmissionEnabled(ParticleSystem[] particles, bool enabled)
