@@ -30,7 +30,7 @@ Shader "Unlit/GlowEffect"
 			float3 ase_worldViewDir = normalize( UnityWorldSpaceViewDir( ase_worldPos ) );
 			float3 ase_worldNormal = i.worldNormal;
 			float fresnelNdotV2 = dot( ase_worldNormal, ase_worldViewDir );
-			float fresnelNode2 = ( 0.0 + 0.4 * pow( 1.0 - fresnelNdotV2, float2( 1,0 ).x ) );
+			float fresnelNode2 = ( 0.0 + 1.0 * pow( 1.0 - fresnelNdotV2, float2( 1,0 ).x ) );
 			float4 color3 = IsGammaSpace() ? float4(0.5312389,0.8867924,0.8673197,0.6431373) : float4(0.2441031,0.7615293,0.7242854,0.6431373);
 			o.Emission = ( ( fresnelNode2 * color3 ) * (0.5 + (_Time.y - -1.0) * (1.0 - 0.5) / (1.0 - -1.0)) ).rgb;
 			o.Alpha = 1;
@@ -111,11 +111,11 @@ Shader "Unlit/GlowEffect"
 }
 /*ASEBEGIN
 Version=17400
-434;56;1131;868;1528.969;213.3718;1.338207;True;True
+434;50;1131;874;1528.969;213.3718;1.338207;True;True
 Node;AmplifyShaderEditor.Vector2Node;1;-1318.373,47.41909;Inherit;False;Constant;_GlowPower;GlowPower;0;0;Create;True;0;0;False;0;1,0;0,0;0;3;FLOAT2;0;FLOAT;1;FLOAT;2
 Node;AmplifyShaderEditor.ColorNode;3;-1123.525,202.4449;Inherit;False;Constant;_Color0;Color 0;0;0;Create;True;0;0;False;0;0.5312389,0.8867924,0.8673197,0.6431373;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.FresnelNode;2;-978.6254,-41.85508;Inherit;False;Standard;WorldNormal;ViewDir;False;5;0;FLOAT3;0,0,1;False;4;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;0.4;False;3;FLOAT;5;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleTimeNode;5;-978.6028,468.7231;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0
+Node;AmplifyShaderEditor.FresnelNode;2;-978.6254,-41.85508;Inherit;False;Standard;WorldNormal;ViewDir;False;5;0;FLOAT3;0,0,1;False;4;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;5;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;4;-699.6254,78.14494;Inherit;False;2;2;0;FLOAT;0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.TFHCRemapNode;6;-651.0026,451.8229;Inherit;False;5;0;FLOAT;0;False;1;FLOAT;-1;False;2;FLOAT;1;False;3;FLOAT;0.5;False;4;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;7;-326.0027,223.0228;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;1;COLOR;0
@@ -130,4 +130,4 @@ WireConnection;7;1;6;0
 WireConnection;0;0;8;0
 WireConnection;0;2;7;0
 ASEEND*/
-//CHKSM=471BA41435462BD479FB1F6C1645F6C28113B4C2
+//CHKSM=BE105EE547690A655BAB7CBB80C88696FF2D4008
