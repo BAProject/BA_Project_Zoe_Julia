@@ -91,8 +91,8 @@ public class Plant : MonoBehaviour
         {
             _currentWater.Value += GameInitialization.instance.config.rainWaterPerSecond * Time.deltaTime;
 
-            if (_currentWater.Value > _startingWater)
-                _currentWater.Value = _startingWater;
+            if (_currentWater.Value > _maxWater)
+                _currentWater.Value = _maxWater;
         }
     }
 
@@ -167,14 +167,17 @@ public class Plant : MonoBehaviour
     private void UseUpWater(float amount)
     {
         _currentWater.Value -= amount;
+
+        if (_currentWater.Value <= 0f)
+            _currentWater.Value = 0f;
     }
 
     private void GetEnergyIfNeeded()
     {
-        if (_currentNutrients.Value >= 100)
+        if (_currentNutrients.Value >= _maxNutrients)
             return;
 
-        var totalMissingEnergy = 100 - _currentNutrients.Value;
+        var totalMissingEnergy = _maxNutrients - _currentNutrients.Value;
         var missingEnergy = totalMissingEnergy;
         var nutrientsReturned = 0f;
 
@@ -191,10 +194,10 @@ public class Plant : MonoBehaviour
 
     private void GetWaterIfNeeded()
     {
-        if (_currentWater.Value >= 100)
+        if (_currentWater.Value >= _maxWater)
             return;
 
-        var totalMissingWater = 100 - _currentWater.Value;
+        var totalMissingWater = _maxWater - _currentWater.Value;
         var missingWater = totalMissingWater;
         var waterReturned = 0f;
 
