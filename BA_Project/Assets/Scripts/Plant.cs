@@ -12,6 +12,9 @@ public class Plant : MonoBehaviour
     public Transform connectionsHolder;
     public LineRenderer connectionPrefab;
 
+    public float _maxNutrients;
+    public float _maxWater;
+
     public float _startingNutirents;
     public float _startingWater;
 
@@ -52,9 +55,6 @@ public class Plant : MonoBehaviour
         _nutrientSources = new List<Source>();
         _waterSources = new List<Source>();
 
-        //_currentEnergy.Subscribe(energy => Debug.Log("Energy changed to " + energy.ToString()));
-        //_currentWater.Subscribe(water => Debug.Log("Water changed to " + water.ToString()));
-
         _currentNutrients.Subscribe(_ => GetEnergyIfNeeded());
         _currentWater.Subscribe(_ => GetWaterIfNeeded());
 
@@ -94,14 +94,6 @@ public class Plant : MonoBehaviour
             if (_currentWater.Value > _startingWater)
                 _currentWater.Value = _startingWater;
         }
-
-        //if(Input.GetKeyDown(KeyCode.G))
-        //{
-        //    if(GameInitialization.instance.level.IsPlayerInRange(transform.position, 4f))
-        //    {
-        //        CreateAndEmitSignal(Signal.SignalType.Fume);
-        //    }
-        //}
     }
 
     private void FindOutlineObjects()
@@ -265,12 +257,12 @@ public class Plant : MonoBehaviour
 
     public float GetNutrientFill()
     {
-        return (float)_currentNutrients.Value / _startingNutirents;
+        return (float)_currentNutrients.Value / _maxNutrients;
     }
 
     public float GetWaterFill()
     {
-        return (float)_currentWater.Value / _startingWater;
+        return (float)_currentWater.Value / _maxWater;
     }
 
     public bool DoesPlantGroupContain(Plant plant)

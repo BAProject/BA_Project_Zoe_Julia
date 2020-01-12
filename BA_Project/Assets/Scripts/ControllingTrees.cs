@@ -196,42 +196,6 @@ public class ControllingTrees : MonoBehaviour
         }
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    GameObject obj = other.gameObject;
-    //    bool wasInRange = _isInTreeRange;
-
-    //    if (obj.tag == Tags.TreeTag)
-    //    {
-    //        Controllable controllable = obj.GetComponent<Controllable>();
-    //        if (controllable)
-    //        {
-    //            _treesInRange.Add(controllable);
-    //            _controllableTree = controllable;
-    //            _isInTreeRange = true;
-    //        }
-    //    }
-
-    //    if (!wasInRange && _isInTreeRange)
-    //        GameInitialization.instance.ui.ShowControllableUi();
-    //}
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    GameObject obj = other.gameObject;
-    //    bool wasInRange = _isInTreeRange;
-
-    //    Controllable controllabe = obj.GetComponent<Controllable>();
-    //    if (controllabe && _treesInRange.Contains(controllabe))
-    //        _treesInRange.Remove(controllabe);
-
-    //    if (_treesInRange.Count == 0)
-    //        _isInTreeRange = false;
-
-    //    if (!_isInTreeRange && wasInRange)
-    //        GameInitialization.instance.ui.HideControllableUi();
-    //}
-
     private void ControlTree()
     {
         Debug.Log("Controlling Tree");
