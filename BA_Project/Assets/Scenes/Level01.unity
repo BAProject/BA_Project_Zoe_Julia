@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26736984, g: 0.33424088, b: 0.43027943, a: 1}
+  m_IndirectSpecularColor: {r: 0.26736253, g: 0.33423868, b: 0.43028095, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -208,6 +208,36 @@ PrefabInstance:
         type: 3}
       propertyPath: _radius
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 2006882152}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -401,6 +431,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &4175351 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4175350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5840575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -795,6 +831,11 @@ PrefabInstance:
       propertyPath: _sicknessThreshold
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -1030,6 +1071,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 91841086}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -1160,6 +1206,16 @@ PrefabInstance:
       propertyPath: _radius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 861245062}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -1269,6 +1325,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -1579,6 +1645,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 166533532}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -1959,6 +2030,41 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _nutrientConsumption
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 706218485}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -2114,6 +2220,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 521370470}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -3521,6 +3632,11 @@ PrefabInstance:
       propertyPath: _sicknessThreshold
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -3926,6 +4042,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _maxWater
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -4601,6 +4722,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -4715,6 +4861,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 654800633}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -5192,6 +5368,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 920bfc55cd20d4c4abec2122720d81ba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &149992259 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 149992258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &155002096
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,6 +5585,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 2091359293}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _nutrientConsumption
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -5748,6 +5965,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &183720407 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 183720406}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &186144936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5817,6 +6040,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &186144937 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 186144936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &186621618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5898,6 +6127,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -6480,6 +6719,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 274bf53a3a813834981e6f19817d998f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &194294928 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 194294927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &195572609
 GameObject:
   m_ObjectHideFlags: 0
@@ -6883,6 +7128,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d17531b5d1c242a45874858dd7bda6f6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &206697070 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 206697069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &210483236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7034,6 +7285,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 2020056662}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -7199,6 +7480,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -7548,6 +7834,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -8018,6 +8309,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5db214a02282cc24ca41a549340710cb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &228141759 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 228141758}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &228913437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8256,6 +8553,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 1706633513}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -8378,6 +8680,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &235357175 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 235357174}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &236798944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9356,6 +9664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _maxWater
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -10392,6 +10705,11 @@ PrefabInstance:
       propertyPath: _sicknessThreshold
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -10801,6 +11119,16 @@ PrefabInstance:
       propertyPath: _maxWater
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -10915,6 +11243,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 228141759}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _nutrientConsumption
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -11034,6 +11397,11 @@ PrefabInstance:
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: canMakeRain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
@@ -12403,6 +12771,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -13758,6 +14151,11 @@ PrefabInstance:
       propertyPath: _sicknessThreshold
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -13995,6 +14393,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &442536694 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 442536693}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &445972192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14240,6 +14644,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -14782,6 +15196,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d4b861af71cd1924682ee626de03e3ba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &459100019 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 459100018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &460806427
 GameObject:
   m_ObjectHideFlags: 0
@@ -15104,6 +15524,36 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 459100019}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -15333,6 +15783,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _maxWater
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -15629,6 +16084,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764641, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a4bb4db740ad4fa3e3a72eaf8be51, type: 3}
 --- !u!1001 &473014693
@@ -15803,6 +16263,16 @@ PrefabInstance:
       propertyPath: _radius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1949507154}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -16142,6 +16612,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -16694,6 +17189,41 @@ PrefabInstance:
       propertyPath: _radius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 442536694}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _nutrientConsumption
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -17194,6 +17724,11 @@ PrefabInstance:
       propertyPath: _sicknessThreshold
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -17379,6 +17914,16 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1949582180}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -17498,6 +18043,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -18067,7 +18637,7 @@ PrefabInstance:
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: _startingWater
-      value: 100
+      value: 780
       objectReference: {fileID: 0}
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -18078,6 +18648,26 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -18744,6 +19334,36 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1874209717}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -19039,6 +19659,11 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -19210,6 +19835,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: de241219ea032e34f95e4f099acac841, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &606820132 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 606820131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &610533610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19617,6 +20248,11 @@ PrefabInstance:
       propertyPath: _sicknessThreshold
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -19725,7 +20361,7 @@ PrefabInstance:
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: _startingWater
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -19736,6 +20372,26 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -19997,6 +20653,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -20166,6 +20847,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -20591,6 +21277,36 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 606820132}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -20693,6 +21409,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d13448517860a174391e013262299b2b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &654800633 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 654800632}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &661331271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22193,6 +22915,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6ce62a791e6d71e42b2cc38213c639f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &706218485 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 706218484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &707171793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23503,11 +24231,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sign (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23563,6 +24286,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.046936564
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.023462059
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.00000016660553
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.0073907874
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0026219783
+      objectReference: {fileID: 0}
+    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2538022068219942377, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -23598,31 +24351,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.046936564
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 0.023462059
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Center.x
-      value: -0.00000016660553
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.0073907874
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0.0026219783
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6f3978acafa1214bb4c11564db42c64, type: 3}
@@ -23797,6 +24525,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -23997,6 +24750,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -24803,6 +25581,36 @@ PrefabInstance:
       propertyPath: _radius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 183720407}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -25075,6 +25883,41 @@ PrefabInstance:
         type: 3}
       propertyPath: _radius
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 235357175}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _nutrientConsumption
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -25436,6 +26279,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 780
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -25920,6 +26788,36 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 2036409593}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -26343,6 +27241,11 @@ PrefabInstance:
       propertyPath: _sicknessThreshold
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -26469,6 +27372,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -26593,6 +27521,36 @@ PrefabInstance:
         type: 3}
       propertyPath: _radius
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1779377720}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -27222,6 +28180,36 @@ PrefabInstance:
       propertyPath: _radius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1757245059}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -27409,6 +28397,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &861245062 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 861245061}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &863753485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27942,12 +28936,12 @@ PrefabInstance:
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: _startingNutirents
-      value: 500
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: _startingWater
-      value: 500
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -27958,6 +28952,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -28557,6 +29556,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 1909999531}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -28661,6 +29665,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -28982,12 +30011,22 @@ PrefabInstance:
       propertyPath: canMakeRain
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5505818061723108916, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653738271104559133, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -29011,11 +30050,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4653738271104559133, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac3ddc53a1d82c4abfe80e2b66b4083, type: 3}
@@ -29511,6 +30545,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -30009,6 +31048,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d17531b5d1c242a45874858dd7bda6f6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &938585381 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 938585380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &940529599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30146,6 +31191,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 1578743350}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -30270,6 +31320,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -30463,6 +31538,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 780
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -30777,6 +31877,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 750641764}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -31071,6 +32176,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -31804,6 +32934,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &990335164 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 990335163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &991743207
 GameObject:
   m_ObjectHideFlags: 0
@@ -33093,6 +34229,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6ce62a791e6d71e42b2cc38213c639f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &1037890295 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1037890294}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1040225573
 GameObject:
   m_ObjectHideFlags: 0
@@ -33556,6 +34698,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &1059561401 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1059561400}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1065515919
 GameObject:
   m_ObjectHideFlags: 0
@@ -33716,6 +34864,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 780
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -34233,6 +35406,16 @@ PrefabInstance:
       propertyPath: _radius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 2000462643}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -34431,6 +35614,36 @@ PrefabInstance:
         type: 3}
       propertyPath: _radius
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1475837392}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -34715,6 +35928,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 186144937}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -34949,6 +36172,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 339597008}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -35072,7 +36300,7 @@ PrefabInstance:
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: _displayHealth
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -35314,6 +36542,36 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 194294928}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 780
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -35513,6 +36771,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -35852,6 +37120,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -35862,11 +37155,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4653738271104559133, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -35876,6 +37164,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac3ddc53a1d82c4abfe80e2b66b4083, type: 3}
@@ -36117,6 +37410,36 @@ PrefabInstance:
       propertyPath: _radius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1793740462}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -36261,6 +37584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _isHealthy
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -36612,6 +37940,16 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -36709,6 +38047,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &1151372094 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1151372093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1151820167
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36845,6 +38189,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -37599,6 +38948,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -38914,6 +40288,11 @@ PrefabInstance:
       propertyPath: _sicknessThreshold
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -39344,6 +40723,41 @@ PrefabInstance:
         type: 3}
       propertyPath: _radius
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1426139042}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _nutrientConsumption
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -40458,6 +41872,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d4b861af71cd1924682ee626de03e3ba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &1286538504 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1286538503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1289739678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40845,6 +42265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _isHealthy
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -41850,6 +43275,11 @@ PrefabInstance:
       propertyPath: _isHealthy
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -42606,6 +44036,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -44505,6 +45940,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 780
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -44515,11 +45975,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4653738271104559133, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -44529,6 +45984,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac3ddc53a1d82c4abfe80e2b66b4083, type: 3}
@@ -44799,6 +46259,36 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 149992259}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -45065,6 +46555,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &1426139042 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1426139041}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1431406303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45147,6 +46643,11 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -45157,11 +46658,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4653738271104559133, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -45171,6 +46667,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac3ddc53a1d82c4abfe80e2b66b4083, type: 3}
@@ -45357,6 +46858,11 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -45516,6 +47022,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -46047,6 +47578,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 477145838}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -46709,6 +48245,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &1475837392 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1475837391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1479851393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46795,6 +48337,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 206697070}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -46906,6 +48478,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -46916,11 +48513,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4653738271104559133, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -46930,6 +48522,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac3ddc53a1d82c4abfe80e2b66b4083, type: 3}
@@ -47176,6 +48773,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 934613247}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -47474,6 +49076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -47972,6 +49579,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -47982,11 +49614,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4653738271104559133, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -47996,6 +49623,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436508543583462649, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac3ddc53a1d82c4abfe80e2b66b4083, type: 3}
@@ -48177,6 +49809,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -48296,6 +49953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -48471,6 +50133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _isHealthy
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -49008,7 +50675,7 @@ PrefabInstance:
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: _startingWater
-      value: 100
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -49019,6 +50686,26 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -49144,6 +50831,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -49309,6 +51021,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -49481,6 +51198,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -49680,6 +51422,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -52039,7 +53806,7 @@ PrefabInstance:
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: _startingWater
-      value: 100
+      value: 1050
       objectReference: {fileID: 0}
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -52050,6 +53817,26 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -52694,10 +54481,20 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8436508542981346313, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+    - target: {fileID: 4653738271104559133, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 1.5
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5629238270352946606, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336181948310308556, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 303219258700641660, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -52714,20 +54511,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4653738271104559133, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+    - target: {fileID: 8436508542981346313, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5629238270352946606, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1336181948310308556, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac3ddc53a1d82c4abfe80e2b66b4083, type: 3}
@@ -52797,11 +54584,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sign (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52857,6 +54639,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.046936564
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.023462059
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.00000016660553
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.0073907874
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0026219783
+      objectReference: {fileID: 0}
+    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2538022068219942377, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -52892,31 +54704,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.046936564
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 0.023462059
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Center.x
-      value: -0.00000016660553
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.0073907874
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0.0026219783
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6f3978acafa1214bb4c11564db42c64, type: 3}
@@ -53022,6 +54809,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -53715,6 +55527,36 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _nutrientConsumption
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -55372,6 +57214,11 @@ PrefabInstance:
       propertyPath: _sicknessThreshold
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -55819,6 +57666,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _isHealthy
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -56618,6 +58470,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &1757245059 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1757245058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1758524176
 GameObject:
   m_ObjectHideFlags: 0
@@ -57196,6 +59054,11 @@ PrefabInstance:
       propertyPath: canMakeRain
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -57521,6 +59384,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &1779377720 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1779377719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1782938480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58153,6 +60022,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &1793740462 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1793740461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1794590514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58244,6 +60119,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -58673,6 +60558,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 1339050131}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -59125,6 +61015,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1151372094}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -59824,6 +61724,36 @@ PrefabInstance:
       propertyPath: _radius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 4175351}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -59978,6 +61908,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -60155,6 +62090,16 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -60257,6 +62202,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: de241219ea032e34f95e4f099acac841, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &1874209717 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1874209716}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1874237772
 GameObject:
   m_ObjectHideFlags: 0
@@ -60502,6 +62453,36 @@ PrefabInstance:
       propertyPath: _radius
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 990335164}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1050
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -60630,6 +62611,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &1881233939 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1881233938}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1883262639
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60726,6 +62713,36 @@ PrefabInstance:
         type: 3}
       propertyPath: _radius
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1059561401}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -60921,6 +62938,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 480
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -61086,6 +63128,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 1914092608}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -61531,6 +63578,11 @@ PrefabInstance:
       propertyPath: _treeCrownRenderer
       value: 
       objectReference: {fileID: 1402327692}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -62023,6 +64075,41 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1037890295}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _nutrientConsumption
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 1050
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 1450
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -62132,6 +64219,16 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -62593,6 +64690,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -63083,6 +65185,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &1949507154 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1949507153}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1949582179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63152,6 +65260,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &1949582180 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1949582179}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1949922966 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2663493436008870224, guid: 70d83c38b0e7ea443aef486cda453279,
@@ -63502,6 +65616,16 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -63666,6 +65790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _sicknessThreshold
       value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -64400,6 +66529,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &2000462643 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2000462642}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2000690556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64562,6 +66697,16 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1881233939}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -64679,6 +66824,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
+--- !u!23 &2006882152 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 31655840705410989, guid: ad70a538783a4d4439a74af865b2aafd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006882151}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2007185861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65371,6 +67522,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: de241219ea032e34f95e4f099acac841, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &2020056662 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2020056661}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2020367087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65799,6 +67956,31 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -66069,6 +68251,16 @@ PrefabInstance:
       propertyPath: _waterConsumption
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _isHealthy
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -66325,6 +68517,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d17531b5d1c242a45874858dd7bda6f6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &2036409593 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2036409592}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2037992098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66496,11 +68694,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI
       objectReference: {fileID: 0}
-    - target: {fileID: 8546126740797918376, guid: cab0c3a8e673e894399e564b8f26112c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8793475220465629274, guid: cab0c3a8e673e894399e564b8f26112c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66572,6 +68765,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5770909091585452354, guid: cab0c3a8e673e894399e564b8f26112c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546126740797918376, guid: cab0c3a8e673e894399e564b8f26112c,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -66921,6 +69119,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _maxWater
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -67801,6 +70004,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_RootOrder
@@ -68051,6 +70259,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6ce62a791e6d71e42b2cc38213c639f8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
+--- !u!23 &2091359293 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1761384881522565279, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2091359292}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2091848996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68206,6 +70420,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 1286538504}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -68590,6 +70834,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _treeCrownRenderer
+      value: 
+      objectReference: {fileID: 938585381}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 780
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -69155,6 +71429,31 @@ PrefabInstance:
         type: 3}
       propertyPath: _waterConsumption
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxNutrients
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _maxWater
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingNutirents
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _startingWater
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
@@ -70482,11 +72781,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -70542,6 +72836,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.046936564
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.023462059
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.00000016660553
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.0073907874
+      objectReference: {fileID: 0}
+    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0026219783
+      objectReference: {fileID: 0}
+    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2538022068219942377, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -70583,31 +72907,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.046936564
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 0.023462059
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Center.x
-      value: -0.00000016660553
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 0.0073907874
-      objectReference: {fileID: 0}
-    - target: {fileID: 870779370358919793, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0.0026219783
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6f3978acafa1214bb4c11564db42c64, type: 3}
@@ -70716,6 +73015,11 @@ PrefabInstance:
     - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: canMakeRain
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683576879459197480, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: _displayHealth
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9118742274715212528, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
