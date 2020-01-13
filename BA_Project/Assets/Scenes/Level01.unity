@@ -562,6 +562,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_5 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 190.1
@@ -2114,6 +2118,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_W_Top_4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 82d3684731c0e2f4d89df44db8c8b334, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 82d3684731c0e2f4d89df44db8c8b334, type: 3}
       propertyPath: m_LocalPosition.x
       value: 249.7
@@ -2992,6 +3000,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: df663f3a529bea1488291436a55e347c, type: 3}
       propertyPath: m_Name
       value: Mountain_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: df663f3a529bea1488291436a55e347c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df663f3a529bea1488291436a55e347c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5694,6 +5706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: df663f3a529bea1488291436a55e347c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df663f3a529bea1488291436a55e347c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 82.1
@@ -6135,6 +6151,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6209,6 +6230,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -6385,6 +6431,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: ad70a538783a4d4439a74af865b2aafd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6459,6 +6510,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340649, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340653, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340645, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340643, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340655, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
@@ -6592,6 +6668,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6651,6 +6732,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -8806,6 +8912,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8880,6 +8991,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764645, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764641, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764643, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764647, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764653, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a4bb4db740ad4fa3e3a72eaf8be51, type: 3}
@@ -8974,6 +9110,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9048,6 +9189,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639581, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639573, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639575, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639577, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639579, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
@@ -9444,6 +9610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9518,6 +9689,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -9893,6 +10089,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9952,6 +10153,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764645, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764641, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764643, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764647, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764653, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a4bb4db740ad4fa3e3a72eaf8be51, type: 3}
@@ -10045,6 +10271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44886dd813302214dbae7de37755c688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 44886dd813302214dbae7de37755c688, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16
@@ -10113,6 +10343,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10172,6 +10407,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764645, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764641, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764643, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764647, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764653, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a4bb4db740ad4fa3e3a72eaf8be51, type: 3}
@@ -11493,6 +11753,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: ad70a538783a4d4439a74af865b2aafd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11552,6 +11817,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340649, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340653, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340645, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340643, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340655, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
@@ -12067,6 +12357,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12126,6 +12421,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -15043,6 +15363,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15117,6 +15442,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -15563,6 +15913,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15637,6 +15992,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764645, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764641, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764643, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764647, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764653, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a4bb4db740ad4fa3e3a72eaf8be51, type: 3}
@@ -23067,6 +23447,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_5 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 140.1
@@ -24867,6 +25251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_W_Top (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 207
@@ -25427,6 +25815,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_Name
       value: Mountain_5 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26207,6 +26599,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26266,6 +26663,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764645, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764641, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764643, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764647, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764653, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a4bb4db740ad4fa3e3a72eaf8be51, type: 3}
@@ -26520,6 +26942,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: df663f3a529bea1488291436a55e347c, type: 3}
       propertyPath: m_Name
       value: Mountain_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: df663f3a529bea1488291436a55e347c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df663f3a529bea1488291436a55e347c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27107,6 +27533,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27166,6 +27597,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -29494,6 +29950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3b53442a13683904ba661a51f36fcff8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3b53442a13683904ba661a51f36fcff8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 284.72995
@@ -30102,6 +30562,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 520a22cf544009b4eb55ac29c359e955, type: 3}
       propertyPath: m_Name
       value: Mountain_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 520a22cf544009b4eb55ac29c359e955, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 520a22cf544009b4eb55ac29c359e955, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30836,6 +31300,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_Name
       value: Mountain_5 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36120,6 +36588,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36194,6 +36667,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764645, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764641, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764643, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764647, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764653, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a4bb4db740ad4fa3e3a72eaf8be51, type: 3}
@@ -41028,6 +41526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44886dd813302214dbae7de37755c688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 44886dd813302214dbae7de37755c688, type: 3}
       propertyPath: m_LocalPosition.x
       value: 233.5
@@ -42175,6 +42677,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_Name
       value: Mountain_5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44405,6 +44911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44464,6 +44975,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -44955,6 +45491,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45014,6 +45555,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764645, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764641, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764643, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764647, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764653, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a4bb4db740ad4fa3e3a72eaf8be51, type: 3}
@@ -45341,6 +45907,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45400,6 +45971,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764645, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764641, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764643, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764647, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146070390934764653, guid: 625a4bb4db740ad4fa3e3a72eaf8be51,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 625a4bb4db740ad4fa3e3a72eaf8be51, type: 3}
@@ -46821,6 +47417,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_W_Top (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 118.7
@@ -47479,6 +48079,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -47553,6 +48158,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -48576,6 +49206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_2
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -48635,6 +49270,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639581, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639573, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639575, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639577, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639579, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
@@ -52526,6 +53186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_4 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 520a22cf544009b4eb55ac29c359e955, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 520a22cf544009b4eb55ac29c359e955, type: 3}
       propertyPath: m_LocalPosition.x
       value: 186.3
@@ -53151,6 +53815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 520a22cf544009b4eb55ac29c359e955, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 520a22cf544009b4eb55ac29c359e955, type: 3}
       propertyPath: m_LocalPosition.x
       value: 65.9
@@ -53659,6 +54327,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1336181948310308556, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 303219258700641660, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_IsActive
@@ -53678,11 +54351,6 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1336181948310308556, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bac3ddc53a1d82c4abfe80e2b66b4083, type: 3}
@@ -54401,6 +55069,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54460,6 +55133,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -54681,6 +55379,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54741,6 +55444,31 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639581, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639573, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639575, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639577, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1761384881520639579, guid: 8bb5d8e1775c1ec459021c22b25e75f1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bb5d8e1775c1ec459021c22b25e75f1, type: 3}
 --- !u!4 &1673069718 stripped
@@ -54797,6 +55525,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 44886dd813302214dbae7de37755c688, type: 3}
       propertyPath: m_Name
       value: Mountain_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44886dd813302214dbae7de37755c688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 44886dd813302214dbae7de37755c688, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55912,6 +56644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_W_Top (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 215.3
@@ -56094,6 +56830,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: df663f3a529bea1488291436a55e347c, type: 3}
       propertyPath: m_Name
       value: Mountain_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: df663f3a529bea1488291436a55e347c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: df663f3a529bea1488291436a55e347c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57362,6 +58102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44886dd813302214dbae7de37755c688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 44886dd813302214dbae7de37755c688, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.4
@@ -58617,6 +59361,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foliage_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: ad70a538783a4d4439a74af865b2aafd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58691,6 +59440,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340649, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340653, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340645, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340643, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 31655840707340655, guid: ad70a538783a4d4439a74af865b2aafd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad70a538783a4d4439a74af865b2aafd, type: 3}
@@ -59093,6 +59867,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59152,6 +59931,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
@@ -61209,6 +62013,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44886dd813302214dbae7de37755c688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 44886dd813302214dbae7de37755c688, type: 3}
       propertyPath: m_LocalPosition.x
       value: -34.7
@@ -62938,6 +63746,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_Name
       value: Mountain_5 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -65309,6 +66121,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_5 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 133.1
@@ -66555,6 +67371,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifere_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7160768422027222117, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2663493436008870224, guid: 182839919e303fd4aaf3245acd2f9e6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -66615,6 +67436,31 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072579, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072581, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072585, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072587, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 96402674647072591, guid: 182839919e303fd4aaf3245acd2f9e6f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 182839919e303fd4aaf3245acd2f9e6f, type: 3}
 --- !u!4 &2020367088 stripped
@@ -66633,6 +67479,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_Name
       value: Mountain_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2a3e42aef1c40c54c961f86cc7c5a35e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68411,6 +69261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_W_Top
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 190.4
@@ -69764,6 +70618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mountain_W_Top (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 72b4be6ae8dbab44e8b8c8be4351c395, type: 3}
       propertyPath: m_LocalPosition.x
       value: 145.8
@@ -70594,6 +71452,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 44886dd813302214dbae7de37755c688, type: 3}
       propertyPath: m_Name
       value: Mountain_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 44886dd813302214dbae7de37755c688, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 44886dd813302214dbae7de37755c688, type: 3}
       propertyPath: m_LocalPosition.x

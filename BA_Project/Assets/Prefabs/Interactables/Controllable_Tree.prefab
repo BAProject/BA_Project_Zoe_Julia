@@ -161,7 +161,7 @@ MonoBehaviour:
   - {fileID: 5342292098417599923}
   FragrancesRain:
   - {fileID: 8436508543583462655}
-  - {fileID: 8001976253075370133}
+  - {fileID: 3446597243274174843}
   FragrancesInsects:
   - {fileID: 8436508543876454963}
   - {fileID: 4195321121477370419}
@@ -368,9 +368,9 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &8001976253075370133 stripped
+--- !u!198 &3446597243274174843 stripped
 ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5192350367726845518, guid: 925de873bbdde5049ba5d04ce3080be3,
+  m_CorrespondingSourceObject: {fileID: 636856690349944736, guid: 925de873bbdde5049ba5d04ce3080be3,
     type: 3}
   m_PrefabInstance: {fileID: 2810901646866976475}
   m_PrefabAsset: {fileID: 0}
