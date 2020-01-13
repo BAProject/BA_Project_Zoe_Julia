@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26736253, g: 0.33423868, b: 0.43028095, a: 1}
+  m_IndirectSpecularColor: {r: 0.26736984, g: 0.33424088, b: 0.43027943, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14694,6 +14694,12 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'Evergreenforests are darker, because their needles can absorb more light. '
       objectReference: {fileID: 0}
+    - target: {fileID: 3496793617490672468, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1c8a37123a66ba243b5dffdf8b913040,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e84ff2ffc10984ab0c2e6e04e0283a, type: 3}
 --- !u!4 &453466712 stripped
@@ -18547,6 +18553,17 @@ PrefabInstance:
         These substances rise in the air, bind watermolecules and can form clouds
         to make it rain.
       objectReference: {fileID: 0}
+    - target: {fileID: 3496793617490672468, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1c8a37123a66ba243b5dffdf8b913040,
+        type: 3}
+    - target: {fileID: 1971234804323777564, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e84ff2ffc10984ab0c2e6e04e0283a, type: 3}
 --- !u!4 &593486708 stripped
@@ -20773,6 +20790,22 @@ PrefabInstance:
       propertyPath: m_Text
       value: "Julia Isabell Hein (Game Art), Zoe Asena Koc (Game Design), Tonio S\xFC\xDFdorf
         (Programming), Erik Schulze (Programming)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3496793617490672468, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1c8a37123a66ba243b5dffdf8b913040,
+        type: 3}
+    - target: {fileID: 1971234804323777564, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8871891770272014324, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e84ff2ffc10984ab0c2e6e04e0283a, type: 3}
@@ -23470,6 +23503,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sign (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23523,11 +23561,6 @@ PrefabInstance:
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2538022068219942377, guid: a6f3978acafa1214bb4c11564db42c64,
@@ -28964,17 +28997,17 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4938966495773269056, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5728353486424468532, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8221159434246502834, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938966495773269056, guid: bac3ddc53a1d82c4abfe80e2b66b4083,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -52764,6 +52797,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sign (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -52817,11 +52855,6 @@ PrefabInstance:
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2538022068219942377, guid: a6f3978acafa1214bb4c11564db42c64,
@@ -54337,6 +54370,17 @@ PrefabInstance:
       propertyPath: m_Text
       value: Until now, there are more than 2000 tree-words known to scientists. Comparing
         that to apes which can roughly use 350 known words, that is quite a lot.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3496793617490672468, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1c8a37123a66ba243b5dffdf8b913040,
+        type: 3}
+    - target: {fileID: 1971234804323777564, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e84ff2ffc10984ab0c2e6e04e0283a, type: 3}
@@ -62214,6 +62258,17 @@ PrefabInstance:
       propertyPath: m_Text
       value: Groups of fungus which grow in a circle are also called "witch circle".
       objectReference: {fileID: 0}
+    - target: {fileID: 3496793617490672468, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1c8a37123a66ba243b5dffdf8b913040,
+        type: 3}
+    - target: {fileID: 1971234804323777564, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e84ff2ffc10984ab0c2e6e04e0283a, type: 3}
 --- !u!4 &1924139683 stripped
@@ -66511,11 +66566,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8756416682491776532, guid: cab0c3a8e673e894399e564b8f26112c,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 180
-      objectReference: {fileID: 0}
     - target: {fileID: 329497516845076266, guid: cab0c3a8e673e894399e564b8f26112c,
         type: 3}
       propertyPath: m_IsActive
@@ -66525,6 +66575,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756416682491776532, guid: cab0c3a8e673e894399e564b8f26112c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 219428223787464677, guid: cab0c3a8e673e894399e564b8f26112c,
         type: 3}
@@ -70133,6 +70188,17 @@ PrefabInstance:
         If they are short on nutrients or need other help, they will not receive it
         and will perish more easily.
       objectReference: {fileID: 0}
+    - target: {fileID: 3496793617490672468, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 1c8a37123a66ba243b5dffdf8b913040,
+        type: 3}
+    - target: {fileID: 1971234804323777564, guid: 13e84ff2ffc10984ab0c2e6e04e0283a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -21
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13e84ff2ffc10984ab0c2e6e04e0283a, type: 3}
 --- !u!4 &749391524790204094 stripped
@@ -70416,6 +70482,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -70471,11 +70542,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2538022068219942377, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -70490,6 +70556,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353595326315524059, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 722771548124875464, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}

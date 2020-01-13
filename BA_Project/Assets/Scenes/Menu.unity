@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.26734892, g: 0.33423245, b: 0.43028098, a: 1}
+  m_IndirectSpecularColor: {r: 0.26735154, g: 0.3342335, b: 0.43028083, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11894,6 +11894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sign (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11959,11 +11964,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 15.283879
       objectReference: {fileID: 0}
-    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2538022068219942377, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -11984,6 +11984,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2353595326315524059, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2353595326315524059, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 64.92
+      objectReference: {fileID: 0}
     - target: {fileID: 722771548124875464, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_Text
@@ -11997,12 +12007,12 @@ PrefabInstance:
     - target: {fileID: 722771548124875464, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 20
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 722771548124875464, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_FontData.m_MinSize
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3953256014030975400, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
@@ -23509,6 +23519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sign (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8704308431651264374, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23573,11 +23588,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 15.283879
-      objectReference: {fileID: 0}
-    - target: {fileID: 937392795892467860, guid: a6f3978acafa1214bb4c11564db42c64,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2538022068219942377, guid: a6f3978acafa1214bb4c11564db42c64,
         type: 3}
